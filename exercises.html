@@ -8,55 +8,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <style>
-    .yt-thumb {
-      position: relative;
-      display: block;
-      border-radius: var(--radius);
-      overflow: hidden;
-      background: #000;
-      aspect-ratio: 16/9;
-    }
-    .yt-thumb img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      opacity: 0.85;
-      transition: opacity 0.2s;
-    }
-    .yt-thumb:hover img { opacity: 1; }
-    .yt-play {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 68px;
-      height: 48px;
-      background: rgba(255,0,0,0.85);
-      border-radius: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: background 0.2s;
-    }
-    .yt-thumb:hover .yt-play { background: #ff0000; }
-    .yt-play::after {
-      content: "";
-      display: block;
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 10px 0 10px 18px;
-      border-color: transparent transparent transparent #fff;
-      margin-left: 3px;
-    }
-    .yt-label {
-      text-align: center;
-      margin-top: 0.5rem;
-      font-size: 0.8rem;
-      color: var(--gray-600);
-    }
-    .yt-label a { color: var(--orange); font-weight: 600; }
-
     /* SVG exercise illustrations */
     .exercise-illust {
       background: var(--gray-50);
@@ -106,7 +57,7 @@
     <section class="hero">
       <div class="container">
         <h1>Exercise Library</h1>
-        <p class="hero-subtitle">Click any video thumbnail to watch on YouTube &mdash; form cues for all 12 exercises</p>
+        <p class="hero-subtitle">Illustrated form guides and cues for all 12 exercises</p>
       </div>
     </section>
 
@@ -121,12 +72,37 @@
             <span class="phase-badge phase-power">Power</span>
           </div>
           <div class="exercise-card-body">
-            <div>
-              <a href="https://www.youtube.com/watch?v=-Kf5mKayV3E" target="_blank" class="yt-thumb">
-                <img src="https://img.youtube.com/vi/-Kf5mKayV3E/hqdefault.jpg" alt="Kettlebell Swing Tutorial">
-                <div class="yt-play"></div>
-              </a>
-              <div class="yt-label"><a href="https://www.youtube.com/watch?v=-Kf5mKayV3E" target="_blank">Watch: Cavemantraining &mdash; How to Kettlebell Swing</a></div>
+            <div class="exercise-illust">
+              <svg viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg">
+                <!-- Start: hinged position, bell between legs -->
+                <g opacity="0.4">
+                  <circle cx="70" cy="50" r="14" fill="none" stroke="#1a3c6e" stroke-width="2.5"/>
+                  <line x1="70" y1="64" x2="75" y2="110" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
+                  <line x1="75" y1="110" x2="55" y2="165" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
+                  <line x1="75" y1="110" x2="95" y2="165" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
+                  <!-- Arms hanging down with bell -->
+                  <line x1="70" y1="75" x2="60" y2="120" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
+                  <line x1="70" y1="75" x2="80" y2="120" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
+                  <rect x="62" y="118" width="16" height="12" rx="3" fill="#e8632b" opacity="0.6"/>
+                  <text x="70" y="190" text-anchor="middle" font-size="11" fill="#6b7280">Hinge</text>
+                </g>
+                <!-- End: standing tall, bell at chest height -->
+                <g>
+                  <circle cx="200" cy="40" r="14" fill="none" stroke="#1a3c6e" stroke-width="2.5"/>
+                  <line x1="200" y1="54" x2="200" y2="115" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
+                  <line x1="200" y1="115" x2="185" y2="165" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
+                  <line x1="200" y1="115" x2="215" y2="165" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
+                  <!-- Arms extended forward with bell -->
+                  <line x1="200" y1="72" x2="240" y2="68" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
+                  <rect x="238" y="62" width="18" height="12" rx="3" fill="#e8632b"/>
+                  <text x="200" y="190" text-anchor="middle" font-size="11" fill="#6b7280">Snap &amp; lock</text>
+                </g>
+                <!-- Movement arrow -->
+                <path d="M 90 115 C 120 80 155 70 185 72" fill="none" stroke="#e8632b" stroke-width="1.5" stroke-dasharray="4"/>
+                <polygon points="183,68 189,72 183,76" fill="#e8632b"/>
+                <text x="140" y="210" text-anchor="middle" font-size="10" fill="#b0b8c4">Explosive hip snap &mdash; arms are ropes, power from hips</text>
+              </svg>
+              <a href="https://www.youtube.com/watch?v=-Kf5mKayV3E" target="_blank" class="btn btn-outline tutorial-link">Watch: Cavemantraining Tutorial</a>
             </div>
             <div class="form-cues">
               <h4>Form Cues</h4>
@@ -210,12 +186,39 @@
             <span class="phase-badge phase-power">Power</span>
           </div>
           <div class="exercise-card-body">
-            <div>
-              <a href="https://www.youtube.com/watch?v=iHQjOK3igfU" target="_blank" class="yt-thumb">
-                <img src="https://img.youtube.com/vi/iHQjOK3igfU/hqdefault.jpg" alt="Rotational Pivot Swing">
-                <div class="yt-play"></div>
-              </a>
-              <div class="yt-label"><a href="https://www.youtube.com/watch?v=iHQjOK3igfU" target="_blank">Watch: Cavemantraining &mdash; Rotational Pivot Swing</a></div>
+            <div class="exercise-illust">
+              <svg viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg">
+                <!-- Start: bell to one side -->
+                <g opacity="0.4">
+                  <circle cx="65" cy="45" r="14" fill="none" stroke="#1a3c6e" stroke-width="2.5"/>
+                  <line x1="65" y1="59" x2="65" y2="120" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
+                  <line x1="65" y1="120" x2="50" y2="170" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
+                  <line x1="65" y1="120" x2="80" y2="170" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
+                  <!-- Arms to left side holding bell -->
+                  <line x1="65" y1="75" x2="30" y2="95" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
+                  <rect x="18" y="90" width="16" height="12" rx="3" fill="#e8632b" opacity="0.6"/>
+                  <text x="65" y="192" text-anchor="middle" font-size="11" fill="#6b7280">Left side</text>
+                </g>
+                <!-- End: bell swung to other side -->
+                <g>
+                  <circle cx="205" cy="45" r="14" fill="none" stroke="#1a3c6e" stroke-width="2.5"/>
+                  <line x1="205" y1="59" x2="205" y2="120" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
+                  <line x1="205" y1="120" x2="190" y2="170" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
+                  <line x1="205" y1="120" x2="220" y2="170" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
+                  <!-- Arms to right side -->
+                  <line x1="205" y1="75" x2="245" y2="90" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
+                  <rect x="243" y="84" width="18" height="12" rx="3" fill="#e8632b"/>
+                  <text x="205" y="192" text-anchor="middle" font-size="11" fill="#6b7280">Right side</text>
+                </g>
+                <!-- Rotational arc arrow -->
+                <path d="M 50 92 C 80 55 180 55 240 85" fill="none" stroke="#e8632b" stroke-width="1.5" stroke-dasharray="4"/>
+                <polygon points="238,81 244,85 238,89" fill="#e8632b"/>
+                <!-- Rotation indicator at hips -->
+                <path d="M 125 120 C 130 112 145 112 150 120" fill="none" stroke="#e8632b" stroke-width="1.5"/>
+                <polygon points="149,117 153,121 148,123" fill="#e8632b"/>
+                <text x="140" y="210" text-anchor="middle" font-size="10" fill="#b0b8c4">Rotational arc &mdash; power from core and hip rotation</text>
+              </svg>
+              <a href="https://www.youtube.com/watch?v=iHQjOK3igfU" target="_blank" class="btn btn-outline tutorial-link">Watch: Cavemantraining Tutorial</a>
             </div>
             <div class="form-cues">
               <h4>Form Cues</h4>
@@ -242,12 +245,41 @@
             <span class="phase-badge phase-compound-pull">Compound Pull</span>
           </div>
           <div class="exercise-card-body">
-            <div>
-              <a href="https://www.youtube.com/watch?v=kgFPqVbYSm8" target="_blank" class="yt-thumb">
-                <img src="https://img.youtube.com/vi/kgFPqVbYSm8/hqdefault.jpg" alt="Kettlebell Row">
-                <div class="yt-play"></div>
-              </a>
-              <div class="yt-label"><a href="https://www.youtube.com/watch?v=kgFPqVbYSm8" target="_blank">Watch: Cavemantraining &mdash; KB Bent-Over Row</a></div>
+            <div class="exercise-illust">
+              <svg viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg">
+                <!-- Start: bent over, arm hanging -->
+                <g opacity="0.4">
+                  <circle cx="70" cy="45" r="14" fill="none" stroke="#1a3c6e" stroke-width="2.5"/>
+                  <!-- Torso angled forward ~45deg -->
+                  <line x1="70" y1="59" x2="85" y2="115" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
+                  <line x1="85" y1="115" x2="65" y2="170" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
+                  <line x1="85" y1="115" x2="105" y2="170" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
+                  <!-- Arm hanging straight down -->
+                  <line x1="75" y1="75" x2="75" y2="130" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
+                  <rect x="67" y="128" width="16" height="12" rx="3" fill="#e8632b" opacity="0.6"/>
+                  <!-- Support arm on knee -->
+                  <line x1="75" y1="80" x2="95" y2="110" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round" opacity="0.5"/>
+                  <text x="75" y="192" text-anchor="middle" font-size="11" fill="#6b7280">Hanging</text>
+                </g>
+                <!-- End: pulled to ribcage -->
+                <g>
+                  <circle cx="200" cy="45" r="14" fill="none" stroke="#1a3c6e" stroke-width="2.5"/>
+                  <line x1="200" y1="59" x2="215" y2="115" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
+                  <line x1="215" y1="115" x2="195" y2="170" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
+                  <line x1="215" y1="115" x2="235" y2="170" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
+                  <!-- Arm pulled up, elbow high -->
+                  <line x1="205" y1="75" x2="200" y2="100" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
+                  <line x1="200" y1="100" x2="195" y2="85" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
+                  <rect x="187" y="80" width="16" height="12" rx="3" fill="#e8632b"/>
+                  <!-- Support arm -->
+                  <line x1="205" y1="80" x2="225" y2="110" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round" opacity="0.5"/>
+                  <text x="205" y="192" text-anchor="middle" font-size="11" fill="#6b7280">Pulled high</text>
+                </g>
+                <path d="M 90 128 C 115 100 160 90 188 88" fill="none" stroke="#e8632b" stroke-width="1.5" stroke-dasharray="4"/>
+                <polygon points="186,84 192,88 186,92" fill="#e8632b"/>
+                <text x="140" y="210" text-anchor="middle" font-size="10" fill="#b0b8c4">Pull elbow past ribcage &mdash; squeeze shoulder blade at top</text>
+              </svg>
+              <a href="https://www.youtube.com/watch?v=kgFPqVbYSm8" target="_blank" class="btn btn-outline tutorial-link">Watch: Cavemantraining Tutorial</a>
             </div>
             <div class="form-cues">
               <h4>Form Cues</h4>
@@ -329,12 +361,36 @@
             <span class="phase-badge phase-compound-push">Compound Push</span>
           </div>
           <div class="exercise-card-body">
-            <div>
-              <a href="https://www.youtube.com/watch?v=He8TyCcK0sc" target="_blank" class="yt-thumb">
-                <img src="https://img.youtube.com/vi/He8TyCcK0sc/hqdefault.jpg" alt="Kettlebell Strict Press">
-                <div class="yt-play"></div>
-              </a>
-              <div class="yt-label"><a href="https://www.youtube.com/watch?v=He8TyCcK0sc" target="_blank">Watch: Eric Leija &mdash; Kettlebell Strict Press</a></div>
+            <div class="exercise-illust">
+              <svg viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg">
+                <!-- Start: bell at shoulder -->
+                <g opacity="0.4">
+                  <circle cx="70" cy="40" r="14" fill="none" stroke="#1a3c6e" stroke-width="2.5"/>
+                  <line x1="70" y1="54" x2="70" y2="115" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
+                  <line x1="70" y1="115" x2="55" y2="165" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
+                  <line x1="70" y1="115" x2="85" y2="165" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
+                  <!-- Arm bent, bell at shoulder -->
+                  <line x1="70" y1="68" x2="70" y2="88" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
+                  <line x1="70" y1="88" x2="78" y2="68" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
+                  <rect x="73" y="58" width="16" height="12" rx="3" fill="#e8632b" opacity="0.6"/>
+                  <text x="70" y="190" text-anchor="middle" font-size="11" fill="#6b7280">Rack</text>
+                </g>
+                <!-- End: locked out overhead -->
+                <g>
+                  <circle cx="200" cy="40" r="14" fill="none" stroke="#1a3c6e" stroke-width="2.5"/>
+                  <line x1="200" y1="54" x2="200" y2="115" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
+                  <line x1="200" y1="115" x2="185" y2="165" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
+                  <line x1="200" y1="115" x2="215" y2="165" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
+                  <!-- Arm straight up, locked out -->
+                  <line x1="200" y1="68" x2="205" y2="12" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
+                  <rect x="198" y="2" width="18" height="12" rx="3" fill="#e8632b"/>
+                  <text x="200" y="190" text-anchor="middle" font-size="11" fill="#6b7280">Lockout</text>
+                </g>
+                <path d="M 92 62 C 115 30 170 15 198 12" fill="none" stroke="#e8632b" stroke-width="1.5" stroke-dasharray="4"/>
+                <polygon points="196,8 202,12 196,16" fill="#e8632b"/>
+                <text x="140" y="210" text-anchor="middle" font-size="10" fill="#b0b8c4">Press straight up &mdash; bicep by ear, full lockout</text>
+              </svg>
+              <a href="https://www.youtube.com/watch?v=He8TyCcK0sc" target="_blank" class="btn btn-outline tutorial-link">Watch: Eric Leija Tutorial</a>
             </div>
             <div class="form-cues">
               <h4>Form Cues</h4>
@@ -543,12 +599,40 @@
             <span class="phase-badge phase-core">Core</span>
           </div>
           <div class="exercise-card-body">
-            <div>
-              <a href="https://www.youtube.com/watch?v=okOIfmvv-lo" target="_blank" class="yt-thumb">
-                <img src="https://img.youtube.com/vi/okOIfmvv-lo/hqdefault.jpg" alt="Kettlebell Side Bend">
-                <div class="yt-play"></div>
-              </a>
-              <div class="yt-label"><a href="https://www.youtube.com/watch?v=okOIfmvv-lo" target="_blank">Watch: Cavemantraining &mdash; KB Side Bend</a></div>
+            <div class="exercise-illust">
+              <svg viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg">
+                <!-- Start: standing upright with bell -->
+                <g opacity="0.4">
+                  <circle cx="70" cy="35" r="14" fill="none" stroke="#1a3c6e" stroke-width="2.5"/>
+                  <line x1="70" y1="49" x2="70" y2="115" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
+                  <line x1="70" y1="115" x2="55" y2="170" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
+                  <line x1="70" y1="115" x2="85" y2="170" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
+                  <!-- Right arm with bell hanging -->
+                  <line x1="70" y1="65" x2="90" y2="120" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
+                  <rect x="84" y="118" width="14" height="10" rx="3" fill="#e8632b" opacity="0.6"/>
+                  <!-- Left arm at side -->
+                  <line x1="70" y1="65" x2="50" y2="100" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
+                  <text x="70" y="192" text-anchor="middle" font-size="11" fill="#6b7280">Upright</text>
+                </g>
+                <!-- End: leaning to opposite side -->
+                <g>
+                  <circle cx="200" cy="35" r="14" fill="none" stroke="#1a3c6e" stroke-width="2.5"/>
+                  <!-- Torso leaning left -->
+                  <line x1="200" y1="49" x2="185" y2="115" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
+                  <line x1="185" y1="115" x2="170" y2="170" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
+                  <line x1="185" y1="115" x2="200" y2="170" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
+                  <!-- Right arm with bell, lowered further -->
+                  <line x1="195" y1="65" x2="215" y2="130" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
+                  <rect x="210" y="128" width="14" height="10" rx="3" fill="#e8632b"/>
+                  <!-- Left arm reaching up/over -->
+                  <line x1="195" y1="65" x2="170" y2="50" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
+                  <text x="195" y="192" text-anchor="middle" font-size="11" fill="#6b7280">Side bend</text>
+                </g>
+                <path d="M 90 85 C 120 70 160 65 180 75" fill="none" stroke="#e8632b" stroke-width="1.5" stroke-dasharray="4"/>
+                <polygon points="178,71 184,75 178,79" fill="#e8632b"/>
+                <text x="140" y="210" text-anchor="middle" font-size="10" fill="#b0b8c4">Lean opposite to weight &mdash; slow, controlled stretch</text>
+              </svg>
+              <a href="https://www.youtube.com/watch?v=okOIfmvv-lo" target="_blank" class="btn btn-outline tutorial-link">Watch: Cavemantraining Tutorial</a>
             </div>
             <div class="form-cues">
               <h4>Form Cues</h4>
@@ -575,12 +659,25 @@
             <span class="phase-badge phase-mobility">Mobility</span>
           </div>
           <div class="exercise-card-body">
-            <div>
-              <a href="https://www.youtube.com/watch?v=N4mMVG8S5Kg" target="_blank" class="yt-thumb">
-                <img src="https://img.youtube.com/vi/N4mMVG8S5Kg/hqdefault.jpg" alt="Kettlebell Around The World">
-                <div class="yt-play"></div>
-              </a>
-              <div class="yt-label"><a href="https://www.youtube.com/watch?v=N4mMVG8S5Kg" target="_blank">Watch: Onnit &mdash; KB Around The World</a></div>
+            <div class="exercise-illust">
+              <svg viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg">
+                <!-- Person standing -->
+                <circle cx="140" cy="35" r="18" fill="none" stroke="#1a3c6e" stroke-width="2.5"/>
+                <line x1="140" y1="53" x2="140" y2="125" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
+                <line x1="140" y1="125" x2="120" y2="180" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
+                <line x1="140" y1="125" x2="160" y2="180" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
+                <!-- Arms slightly out, passing bell -->
+                <line x1="140" y1="75" x2="110" y2="100" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
+                <line x1="140" y1="75" x2="170" y2="100" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
+                <!-- Circular path around waist -->
+                <ellipse cx="140" cy="110" rx="50" ry="25" fill="none" stroke="#e8632b" stroke-width="2" stroke-dasharray="6 3"/>
+                <!-- Arrow on the circle -->
+                <polygon points="90,104 85,112 93,110" fill="#e8632b"/>
+                <!-- Bell on the path -->
+                <rect x="182" y="104" width="16" height="12" rx="3" fill="#e8632b"/>
+                <text x="140" y="210" text-anchor="middle" font-size="10" fill="#b0b8c4">Pass bell around waist &mdash; smooth hand-off, core tight</text>
+              </svg>
+              <a href="https://www.youtube.com/watch?v=N4mMVG8S5Kg" target="_blank" class="btn btn-outline tutorial-link">Watch: Onnit Tutorial</a>
             </div>
             <div class="form-cues">
               <h4>Form Cues</h4>
