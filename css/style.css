@@ -348,6 +348,11 @@ tbody tr:hover { background: var(--gray-50); }
 .phase-isolation { background: #fce7f3; color: #9d174d; }
 .phase-core { background: #ffedd5; color: #9a3412; }
 .phase-mobility { background: #e0e7ff; color: #3730a3; }
+.phase-stability { background: #ccfbf1; color: #0f766e; }
+.phase-flexion { background: #fef3c7; color: #92400e; }
+.phase-rotation { background: #ede9fe; color: #5b21b6; }
+.phase-isometric { background: #e0e7ff; color: #3730a3; }
+.phase-anti-rotation { background: #dbeafe; color: #1e40af; }
 
 .demo-link {
   display: inline-block;
@@ -645,6 +650,114 @@ footer {
 footer strong { color: var(--orange); }
 
 /* ============================================
+   Abs Program
+   ============================================ */
+
+.day-hero.abs { background: linear-gradient(135deg, #0e7490 0%, #0891b2 100%); color: white; }
+
+.abs-card { border-top-color: #0891b2; }
+
+.program-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.program-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  padding: 2rem;
+  border-top: 4px solid var(--navy);
+  transition: box-shadow var(--transition), transform var(--transition);
+}
+
+.program-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-2px); }
+.program-card.abs-card { border-top-color: #0891b2; }
+
+.program-card h3 {
+  font-size: 1.3rem;
+  color: var(--navy);
+  margin-bottom: 0.5rem;
+}
+
+.program-card .program-schedule {
+  display: inline-block;
+  padding: 0.2rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background: var(--gray-50);
+  color: var(--gray-600);
+  margin-bottom: 1rem;
+}
+
+.program-card p { color: var(--gray-600); font-size: 0.95rem; margin-bottom: 1rem; }
+.program-card ul { list-style: none; margin-bottom: 1.5rem; }
+.program-card ul li { padding: 0.3rem 0; font-size: 0.9rem; color: var(--gray-600); }
+.program-card ul li::before { content: "→ "; color: var(--orange); font-weight: 700; }
+
+.week-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.5rem;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.week-day {
+  padding: 0.75rem 0.25rem;
+  border-radius: var(--radius);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.week-day .week-day-name {
+  display: block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.25rem;
+}
+
+.week-day.kb { background: rgba(26,60,110,0.1); color: var(--navy); }
+.week-day.abs-day { background: rgba(8,145,178,0.1); color: #0e7490; }
+.week-day.rest { background: var(--gray-50); color: var(--gray-300); }
+
+/* Workout section dividers */
+.workout-divider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 2.5rem 0 1.5rem;
+}
+
+.workout-divider h3 {
+  white-space: nowrap;
+  color: var(--navy);
+  font-size: 1.2rem;
+}
+
+.workout-divider::after {
+  content: "";
+  flex: 1;
+  height: 2px;
+  background: var(--gray-100);
+}
+
+.workout-meta {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: var(--gray-600);
+}
+
+.workout-meta strong { color: var(--navy); }
+
+/* ============================================
    Responsive
    ============================================ */
 
@@ -667,6 +780,9 @@ footer strong { color: var(--orange); }
   .hero-meta { gap: 0.75rem; }
 
   .card-grid { grid-template-columns: 1fr; }
+  .program-grid { grid-template-columns: 1fr; }
+  .week-grid { grid-template-columns: repeat(7, 1fr); gap: 0.25rem; }
+  .week-day { padding: 0.5rem 0.15rem; font-size: 0.7rem; }
 
   .exercise-card-body { grid-template-columns: 1fr; }
 

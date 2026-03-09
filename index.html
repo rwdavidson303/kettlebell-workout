@@ -3,24 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kettlebell Workout Program</title>
+  <title>RD's Workout</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- Navigation -->
   <nav class="nav">
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo">KB <span>Workout</span></a>
+      <a href="index.html" class="nav-logo">RD's <span>Workout</span></a>
       <ul class="nav-links">
         <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="monday.html">Monday</a></li>
-        <li><a href="wednesday.html">Wednesday</a></li>
-        <li><a href="friday.html">Friday</a></li>
+        <li><a href="kettlebell.html">Kettlebell</a></li>
+        <li><a href="monday.html">Mon</a></li>
+        <li><a href="wednesday.html">Wed</a></li>
+        <li><a href="friday.html">Fri</a></li>
         <li><a href="exercises.html">Exercises</a></li>
         <li><a href="progression.html">Progression</a></li>
+        <li><a href="abs.html">Abs</a></li>
       </ul>
       <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -29,236 +30,118 @@
   </nav>
 
   <main>
-    <!-- Hero -->
     <section class="hero">
       <div class="container">
-        <h1>Optimized Kettlebell Workout Program</h1>
-        <p class="hero-subtitle">Your 12 Exercises &mdash; Resequenced, Restructured &amp; Maximized</p>
+        <h1>RD's Workout</h1>
+        <p class="hero-subtitle">Science-Based Training Programs</p>
         <div class="hero-meta">
-          <div class="hero-meta-item"><strong>Schedule:</strong>&nbsp;Mon / Wed / Fri</div>
-          <div class="hero-meta-item"><strong>Duration:</strong>&nbsp;50-70 min</div>
-          <div class="hero-meta-item"><strong>Exercises:</strong>&nbsp;12 per session</div>
-          <div class="hero-meta-item"><strong>Total Reps:</strong>&nbsp;1,200 per session</div>
+          <div class="hero-meta-item"><strong>Programs:</strong>&nbsp;2</div>
+          <div class="hero-meta-item"><strong>Training Days:</strong>&nbsp;6 per week</div>
+          <div class="hero-meta-item"><strong>Built On:</strong>&nbsp;Peer-reviewed research</div>
         </div>
       </div>
     </section>
 
-    <!-- Why This Works -->
+    <!-- Programs -->
     <section class="section">
       <div class="container">
         <div class="section-header">
-          <h2>Why This Program Works</h2>
-          <p>Built on peer-reviewed research from ACE, NSCA, StrongFirst, and multiple published studies</p>
+          <h2>Training Programs</h2>
+          <p>Two complementary programs covering strength, conditioning, and core</p>
+        </div>
+
+        <div class="program-grid">
+          <div class="program-card">
+            <div class="program-schedule">Mon / Wed / Fri</div>
+            <h3>Kettlebell Program</h3>
+            <p>12 exercises resequenced and restructured for maximum physical effect. Three different day styles hit endurance, conditioning, and muscle tone.</p>
+            <ul>
+              <li>12 exercises per session</li>
+              <li>1,200 reps per session</li>
+              <li>50-70 minutes</li>
+              <li>3 day styles: Standard, Density, Power</li>
+            </ul>
+            <a href="kettlebell.html" class="btn btn-primary">View Program</a>
+          </div>
+
+          <div class="program-card abs-card">
+            <div class="program-schedule">Tue / Thu / Sat</div>
+            <h3>Abdominal Routine</h3>
+            <p>8 exercises selected from EMG research for maximum core activation. Three rotating workouts target every region of the core.</p>
+            <ul>
+              <li>8 exercises across 3 sessions</li>
+              <li>24 working sets per week</li>
+              <li>15-20 minutes per session</li>
+              <li>Bodyweight + 1 kettlebell</li>
+            </ul>
+            <a href="abs.html" class="btn btn-primary">View Program</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Weekly Schedule -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <h2>Weekly Schedule</h2>
+          <p>Train 6 days, rest 1 &mdash; alternating full-body and core</p>
+        </div>
+
+        <div class="week-grid">
+          <div class="week-day kb">
+            <span class="week-day-name">Mon</span>
+            Kettlebell<br>Standard
+          </div>
+          <div class="week-day abs-day">
+            <span class="week-day-name">Tue</span>
+            Abs<br>Stability
+          </div>
+          <div class="week-day kb">
+            <span class="week-day-name">Wed</span>
+            Kettlebell<br>Density
+          </div>
+          <div class="week-day abs-day">
+            <span class="week-day-name">Thu</span>
+            Abs<br>Lateral
+          </div>
+          <div class="week-day kb">
+            <span class="week-day-name">Fri</span>
+            Kettlebell<br>Power
+          </div>
+          <div class="week-day abs-day">
+            <span class="week-day-name">Sat</span>
+            Abs<br>Strength
+          </div>
+          <div class="week-day rest">
+            <span class="week-day-name">Sun</span>
+            Rest &amp;<br>Recover
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How They Work Together -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>How They Work Together</h2>
         </div>
         <div class="card-grid">
           <div class="card">
             <div class="card-number">1</div>
-            <h3>Ballistic Exercises First</h3>
-            <p>Power movements when your central nervous system is freshest. Each swing rep produces more force, burns more calories, and builds more power. (McGill &amp; Marshall, 2012)</p>
+            <h3>No Overlap</h3>
+            <p>Kettlebell days train full-body strength and conditioning. Ab days target core muscles directly. Never the same muscle groups two days in a row.</p>
           </div>
           <div class="card">
             <div class="card-number">2</div>
-            <h3>Compound Before Isolation</h3>
-            <p>Large muscle groups first while they're fresh, small muscle groups last when they're pre-warmed from compound movements.</p>
+            <h3>Complementary Training</h3>
+            <p>Kettlebell swings and presses build core stability indirectly. Dedicated ab work builds the visible strength and definition that compound movements alone can't achieve.</p>
           </div>
           <div class="card">
             <div class="card-number">3</div>
-            <h3>Push/Pull Alternation</h3>
-            <p>Working opposing muscle groups back-to-back reduces local fatigue, so you maintain rep quality deeper into the workout.</p>
-          </div>
-          <div class="card">
-            <div class="card-number">4</div>
-            <h3>Optimized Set Structure</h3>
-            <p>10x10 for ballistic moves keeps every rep explosive. 5x20 for compounds maintains form. 4x25 for isolation work targets endurance.</p>
-          </div>
-          <div class="card">
-            <div class="card-number">5</div>
-            <h3>Periodized Across 3 Days</h3>
-            <p>Research (PMC9022701, 2022) proved periodized training produces statistically significant endurance gains while identical sessions did not.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Optimized Exercise Order -->
-    <section class="section section-alt">
-      <div class="container">
-        <div class="section-header">
-          <h2>The Optimized Exercise Order</h2>
-          <p>Your new permanent sequence &mdash; science behind every placement</p>
-        </div>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Exercise</th>
-                <th>Phase</th>
-                <th>Why This Position</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td class="exercise-name">Kettlebell Swings</td>
-                <td><span class="phase-badge phase-power">Power</span></td>
-                <td>The #1 KB exercise. Highest CNS demand, full posterior chain. Must be first when you're freshest.</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td class="exercise-name">High Pulls</td>
-                <td><span class="phase-badge phase-power">Power</span></td>
-                <td>Second ballistic movement. Traps, rear delts, biceps &mdash; vertical pulling power while CNS is still fresh.</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td class="exercise-name">Side (Golf) Swings</td>
-                <td><span class="phase-badge phase-power">Power</span></td>
-                <td>Third ballistic movement. Rotational power through core and hips. Benefits from fresh core stabilizers.</td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td class="exercise-name">Rows</td>
-                <td><span class="phase-badge phase-compound-pull">Compound Pull</span></td>
-                <td>Horizontal pull &mdash; lats, rhomboids, rear delts, biceps. Placed after ballistics, before pressing.</td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td class="exercise-name">Push Outs</td>
-                <td><span class="phase-badge phase-compound-push">Compound Push</span></td>
-                <td>Horizontal push &mdash; chest, front delts, triceps. Push AFTER pull = agonist-antagonist alternation.</td>
-              </tr>
-              <tr>
-                <td>6</td>
-                <td class="exercise-name">Overhead Press</td>
-                <td><span class="phase-badge phase-compound-push">Compound Push</span></td>
-                <td>Vertical push &mdash; shoulders, triceps. Pressing muscles are warm but not exhausted.</td>
-              </tr>
-              <tr>
-                <td>7</td>
-                <td class="exercise-name">Low Chest Flys</td>
-                <td><span class="phase-badge phase-accessory">Accessory</span></td>
-                <td>Front delt / chest isolation. Bridges compound to isolation work.</td>
-              </tr>
-              <tr>
-                <td>8</td>
-                <td class="exercise-name">Bicep Curls + Press</td>
-                <td><span class="phase-badge phase-accessory">Accessory</span></td>
-                <td>Full arm chain compound. Placed after heavy pulling pre-warmed biceps.</td>
-              </tr>
-              <tr>
-                <td>9</td>
-                <td class="exercise-name">Tricep Extensions</td>
-                <td><span class="phase-badge phase-isolation">Isolation</span></td>
-                <td>MUST come after all pressing &mdash; pressing pre-fatigues triceps for deeper isolation.</td>
-              </tr>
-              <tr>
-                <td>10</td>
-                <td class="exercise-name">Side Extensions</td>
-                <td><span class="phase-badge phase-core">Core</span></td>
-                <td>Oblique/lateral core. Near the end so you don't pre-fatigue stabilizers needed earlier.</td>
-              </tr>
-              <tr>
-                <td>11</td>
-                <td class="exercise-name">Waist Halos</td>
-                <td><span class="phase-badge phase-mobility">Mobility</span></td>
-                <td>Low-intensity core + hip mobility. Active recovery after heavy work.</td>
-              </tr>
-              <tr>
-                <td>12</td>
-                <td class="exercise-name">Head Halos</td>
-                <td><span class="phase-badge phase-mobility">Mobility</span></td>
-                <td>Shoulder mobility + trap activation. Lowest intensity goes last.</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-
-    <!-- Weekly Overview -->
-    <section class="section">
-      <div class="container">
-        <div class="section-header">
-          <h2>Weekly Overview</h2>
-          <p>Same 12 exercises, three different execution styles</p>
-        </div>
-        <div class="card-grid">
-          <div class="card day-card monday-card">
-            <div class="day-label">Monday</div>
-            <h3>Standard Day</h3>
-            <p>Balanced baseline workout. Solid effort across all 12 exercises.</p>
-            <ul>
-              <li>10x10 / 5x20 / 4x25 set structure</li>
-              <li>HR rest: 140-145 bpm (~30 sec)</li>
-              <li>55-65 minutes</li>
-            </ul>
-            <a href="monday.html" class="btn btn-primary">View Workout</a>
-          </div>
-          <div class="card day-card wednesday-card">
-            <div class="day-label">Wednesday</div>
-            <h3>Density Day</h3>
-            <p>Maximum metabolic burn. Faster pace, shorter rest.</p>
-            <ul>
-              <li>5x20 / 4x25 / 2x50 set structure</li>
-              <li>Short rest: 15-20 sec (HR stays 150+)</li>
-              <li>45-55 minutes</li>
-            </ul>
-            <a href="wednesday.html" class="btn btn-primary">View Workout</a>
-          </div>
-          <div class="card day-card friday-card">
-            <div class="day-label">Friday</div>
-            <h3>Power Day</h3>
-            <p>Maximum force per rep. Heavier bells, more rest.</p>
-            <ul>
-              <li>10x10 / 5x20 set structure</li>
-              <li>Full rest: 45-60 sec (HR to 130-135)</li>
-              <li>60-70 minutes</li>
-            </ul>
-            <a href="friday.html" class="btn btn-primary">View Workout</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Quick Reference -->
-    <section class="section section-alt">
-      <div class="container">
-        <div class="section-header">
-          <h2>Quick Reference</h2>
-        </div>
-        <div class="quick-ref">
-          <div class="quick-ref-list">
-            <h3>Exercise Order (Memorize This)</h3>
-            <ol>
-              <li>Swings</li>
-              <li>High Pulls</li>
-              <li>Golf Swings</li>
-              <li>Rows</li>
-              <li>Push Outs</li>
-              <li>Overhead Press</li>
-              <li>Low Chest Flys</li>
-              <li>Bicep Curls + Press</li>
-              <li>Tricep Extensions</li>
-              <li>Side Extensions</li>
-              <li>Waist Halos</li>
-              <li>Head Halos</li>
-            </ol>
-          </div>
-          <div class="quick-ref-list">
-            <h3>Daily Cheat Sheet</h3>
-            <div class="table-wrap" style="box-shadow:none;">
-              <table>
-                <thead>
-                  <tr><th>Day</th><th>Sets</th><th>Rest</th><th>Time</th></tr>
-                </thead>
-                <tbody>
-                  <tr><td><strong>Mon</strong></td><td>10x10 / 5x20 / 4x25</td><td>~30 sec</td><td>55-65 min</td></tr>
-                  <tr><td><strong>Wed</strong></td><td>5x20 / 4x25 / 2x50</td><td>15-20 sec</td><td>45-55 min</td></tr>
-                  <tr><td><strong>Fri</strong></td><td>10x10 / 5x20</td><td>45-60 sec</td><td>60-70 min</td></tr>
-                </tbody>
-              </table>
-            </div>
+            <h3>Built-In Recovery</h3>
+            <p>Sunday rest. Ab sessions are 15-20 minutes &mdash; short enough that they serve as active recovery between heavy kettlebell days.</p>
           </div>
         </div>
       </div>
@@ -266,7 +149,7 @@
   </main>
 
   <footer>
-    <p>Science-Based Kettlebell Program &mdash; Designed <strong>March 2026</strong> &mdash; Review every 12 weeks</p>
+    <p>RD's Workout &mdash; Science-Based Training &mdash; <strong>March 2026</strong></p>
   </footer>
 
   <script src="js/main.js"></script>
