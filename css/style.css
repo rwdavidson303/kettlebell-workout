@@ -3,10 +3,11 @@
    ============================================ */
 
 :root {
-  --navy: #1a3c6e;
-  --navy-light: #2a5298;
-  --orange: #e8632b;
-  --orange-hover: #d4551f;
+  --navy: #14213D;
+  --navy-light: #1e3054;
+  --accent: #CE1126;
+  --accent-hover: #a80e1f;
+  --powder-blue: #006BA6;
   --bg: #f8f9fa;
   --white: #ffffff;
   --gray-50: #f0f2f5;
@@ -33,7 +34,7 @@ body {
 }
 
 a { color: var(--navy); text-decoration: none; transition: color var(--transition); }
-a:hover { color: var(--orange); }
+a:hover { color: var(--accent); }
 
 /* ============================================
    Navigation
@@ -66,7 +67,7 @@ a:hover { color: var(--orange); }
   letter-spacing: -0.02em;
 }
 
-.nav-logo span { color: var(--orange); }
+.nav-logo span { color: var(--accent); }
 
 .nav-links {
   display: flex;
@@ -84,7 +85,7 @@ a:hover { color: var(--orange); }
 }
 
 .nav-links a:hover { color: var(--white); background: rgba(255,255,255,0.1); }
-.nav-links a.active { color: var(--white); background: var(--orange); }
+.nav-links a.active { color: var(--white); background: var(--accent); }
 
 .nav-toggle {
   display: none;
@@ -188,7 +189,7 @@ main { padding-top: 60px; }
   font-size: 0.95rem;
 }
 
-.hero-meta-item strong { color: var(--orange); }
+.hero-meta-item strong { color: var(--accent); }
 
 /* ============================================
    Day Header (workout pages)
@@ -199,9 +200,12 @@ main { padding-top: 60px; }
   text-align: center;
 }
 
-.day-hero.monday { background: linear-gradient(135deg, #1a3c6e 0%, #2a5298 100%); color: white; }
-.day-hero.wednesday { background: linear-gradient(135deg, #b45309 0%, #e8632b 100%); color: white; }
+.day-hero.monday { background: linear-gradient(135deg, #14213D 0%, #1e3054 100%); color: white; }
+.day-hero.wednesday { background: linear-gradient(135deg, #9e0b1c 0%, #CE1126 100%); color: white; }
 .day-hero.friday { background: linear-gradient(135deg, #065f46 0%, #059669 100%); color: white; }
+.day-hero.strength { background: linear-gradient(135deg, #14213D 0%, #1e3054 100%); color: white; }
+.day-hero.hypertrophy { background: linear-gradient(135deg, #9e0b1c 0%, #CE1126 100%); color: white; }
+.day-hero.metabolic { background: linear-gradient(135deg, #004d73 0%, #006BA6 100%); color: white; }
 
 .day-hero h1 { font-size: 2rem; font-weight: 800; margin-bottom: 0.5rem; }
 .day-hero .day-tag {
@@ -301,14 +305,17 @@ main { padding-top: 60px; }
 }
 
 .day-card.monday-card { border-top-color: var(--navy); }
-.day-card.wednesday-card { border-top-color: var(--orange); }
+.day-card.wednesday-card { border-top-color: var(--accent); }
 .day-card.friday-card { border-top-color: #059669; }
+.day-card.strength-card { border-top-color: var(--navy); }
+.day-card.hypertrophy-card { border-top-color: var(--accent); }
+.day-card.metabolic-card { border-top-color: var(--powder-blue); }
 
 .day-card h3 { font-size: 1.2rem; margin-bottom: 0.25rem; }
 .day-card .day-label { color: var(--gray-600); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600; margin-bottom: 0.75rem; }
 .day-card ul { list-style: none; text-align: left; margin: 1rem 0; }
 .day-card ul li { padding: 0.3rem 0; font-size: 0.9rem; color: var(--gray-600); }
-.day-card ul li::before { content: "→ "; color: var(--orange); font-weight: 700; }
+.day-card ul li::before { content: "→ "; color: var(--accent); font-weight: 700; }
 
 .btn {
   display: inline-block;
@@ -321,8 +328,8 @@ main { padding-top: 60px; }
   border: none;
 }
 
-.btn-primary { background: var(--orange); color: var(--white); }
-.btn-primary:hover { background: var(--orange-hover); color: var(--white); }
+.btn-primary { background: var(--accent); color: var(--white); }
+.btn-primary:hover { background: var(--accent-hover); color: var(--white); }
 .btn-outline { border: 2px solid var(--navy); color: var(--navy); background: transparent; }
 .btn-outline:hover { background: var(--navy); color: var(--white); }
 
@@ -388,12 +395,14 @@ tbody tr:hover { background: var(--gray-50); }
 .phase-rotation { background: #ede9fe; color: #5b21b6; }
 .phase-isometric { background: #e0e7ff; color: #3730a3; }
 .phase-anti-rotation { background: #dbeafe; color: #1e40af; }
+.phase-compound-lower { background: #fef3c7; color: #92400e; }
+.phase-finisher { background: #fecaca; color: #991b1b; }
 
 .demo-link {
   display: inline-block;
   margin-top: 0.25rem;
   font-size: 0.8rem;
-  color: var(--orange);
+  color: var(--accent);
   font-weight: 600;
 }
 
@@ -494,7 +503,7 @@ tbody tr:hover { background: var(--gray-50); }
   content: "→";
   position: absolute;
   left: 0;
-  color: var(--orange);
+  color: var(--accent);
   font-weight: 700;
 }
 
@@ -545,7 +554,7 @@ tbody tr:hover { background: var(--gray-50); }
   font-size: 0.9rem;
   color: var(--gray-600);
 }
-.cooldown li::before { content: "• "; color: var(--orange); font-weight: 700; }
+.cooldown li::before { content: "• "; color: var(--accent); font-weight: 700; }
 
 /* ============================================
    Day Navigation
@@ -600,7 +609,7 @@ tbody tr:hover { background: var(--gray-50); }
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: var(--orange);
+  background: var(--accent);
   border: 3px solid var(--bg);
 }
 
@@ -616,7 +625,7 @@ tbody tr:hover { background: var(--gray-50); }
   font-size: 0.9rem;
   color: var(--gray-600);
 }
-.timeline-item li::before { content: "→ "; color: var(--orange); font-weight: 700; }
+.timeline-item li::before { content: "→ "; color: var(--accent); font-weight: 700; }
 
 /* ============================================
    Quick Reference
@@ -682,13 +691,13 @@ footer {
   font-size: 0.85rem;
 }
 
-footer strong { color: var(--orange); }
+footer strong { color: var(--accent); }
 
 /* ============================================
    Abs Program
    ============================================ */
 
-.day-hero.abs { background: linear-gradient(135deg, #0e7490 0%, #0891b2 100%); color: white; }
+.day-hero.abs { background: linear-gradient(135deg, #14213D 0%, #1e3054 100%); color: white; }
 
 .abs-card { border-top-color: #0891b2; }
 
@@ -731,7 +740,7 @@ footer strong { color: var(--orange); }
 .program-card p { color: var(--gray-600); font-size: 0.95rem; margin-bottom: 1rem; }
 .program-card ul { list-style: none; margin-bottom: 1.5rem; }
 .program-card ul li { padding: 0.3rem 0; font-size: 0.9rem; color: var(--gray-600); }
-.program-card ul li::before { content: "→ "; color: var(--orange); font-weight: 700; }
+.program-card ul li::before { content: "→ "; color: var(--accent); font-weight: 700; }
 
 .week-grid {
   display: grid;
@@ -756,7 +765,8 @@ footer strong { color: var(--orange); }
   margin-bottom: 0.25rem;
 }
 
-.week-day.kb { background: rgba(26,60,110,0.1); color: var(--navy); }
+.week-day.kb { background: rgba(20,33,61,0.1); color: var(--navy); }
+.week-day.db { background: rgba(206,17,38,0.1); color: #9e0b1c; }
 .week-day.abs-day { background: rgba(8,145,178,0.1); color: #0e7490; }
 .week-day.rest { background: var(--gray-50); color: var(--gray-300); }
 
@@ -838,4 +848,50 @@ footer strong { color: var(--orange); }
   .hero h1 { font-size: 1.3rem; }
   .section { padding: 2rem 0; }
   .container { padding: 0 1rem; }
+}
+
+/* ============================================
+   Dumbbell Program
+   ============================================ */
+
+.program-card.db-card { border-top-color: var(--accent); }
+
+.superset-label {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  background: var(--accent);
+  color: var(--white);
+  margin-right: 0.5rem;
+}
+
+.circuit-header {
+  background: var(--navy);
+  color: var(--white);
+  padding: 0.6rem 1rem;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.circuit-header.circuit-b { background: #1e3054; }
+.circuit-header.finisher { background: #9e0b1c; }
+
+tbody tr.superset-a { background: rgba(206,17,38,0.03); }
+tbody tr.superset-b { background: rgba(206,17,38,0.06); border-bottom: 2px solid var(--gray-100) !important; }
+
+.tempo-badge {
+  display: inline-block;
+  padding: 0.1rem 0.4rem;
+  border-radius: 3px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  background: var(--gray-50);
+  color: var(--gray-600);
+  font-family: monospace;
 }

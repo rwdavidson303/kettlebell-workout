@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise Library | DB Workout</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .exercise-illust {
+      background: var(--gray-50);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 200px;
+    }
+    .exercise-illust svg {
+      max-width: 280px;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+    .exercise-illust .illust-label {
+      font-size: 0.75rem;
+      color: var(--gray-600);
+      text-align: center;
+    }
+    .exercise-illust .tutorial-link {
+      margin-top: 0.5rem;
+    }
+  </style>
+</head>
+<body class="has-subnav">
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">RD's <span>Workout</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="kettlebell.html">Kettlebell</a></li>
+        <li><a href="dumbbell.html" class="active">Dumbbell</a></li>
+        <li><a href="abs.html">Abs</a></li>
+        <li><a href="nutrition.html">Nutrition</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="subnav">
+    <div class="subnav-inner">
+      <a href="dumbbell.html">Overview</a>
+      <a href="strength.html">Strength (M)</a>
+      <a href="hypertrophy.html">Hypertrophy (W)</a>
+      <a href="metabolic.html">Metabolic (F)</a>
+      <a href="db-exercises.html" class="active">Exercises</a>
+      <a href="db-progression.html">Progression</a>
+    </div>
+  </div>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Dumbbell Exercise Library</h1>
+        <p class="hero-subtitle">14 exercises selected from EMG research &mdash; form cues, illustrations &amp; tutorials</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <!-- Exercise 1: Bulgarian Split Squat -->
+        <div class="exercise-card" id="split-squat">
+          <div class="exercise-card-header">
+            <div class="exercise-card-num">1</div>
+            <h3>Bulgarian Split Squat</h3>
+            <span class="phase-badge phase-compound-lower">Compound Lower</span>
+          </div>
+          <div class="exercise-card-body">
+            <div class="exercise-illust">
+              <svg viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg">
+                <!-- Start position (faded) -->
+                <g opacity="0.35">
+                  <circle cx="80" cy="40" r="12" fill="none" stroke="#14213D" stroke-width="2"/>
+                  <line x1="80" y1="52" x2="80" y2="100" stroke="#14213D" stroke-width="2"/>
+                  <line x1="80" y1="100" x2="65" y2="145" stroke="#14213D" stroke-width="2"/>
+                  <line x1="80" y1="100" x2="95" y2="130" stroke="#14213D" stroke-width="2"/>
+                  <line x1="95" y1="130" x2="100" y2="145" stroke="#14213D" stroke-width="2"/>
+                  <line x1="80" y1="65" x2="65" y2="95" stroke="#14213D" stroke-width="2"/>
+                  <line x1="80" y1="65" x2="95" y2="95" stroke="#14213D" stroke-width="2"/>
+                  <rect x="58" y="90" width="10" height="14" rx="2" fill="#CE1126" opacity="0.5"/>
+                  <rect x="92" y="90" width="10" height="14" rx="2" fill="#CE1126" opacity="0.5"/>
+                  <rect x="90" y="140" width="30" height="8" rx="2" fill="#14213D" opacity="0.3"/>
+                </g>
+                <text x="80" y="165" text-anchor="middle" font-size="9" fill="#14213D" opacity="0.5">Start</text>
+                <!-- End position (deep) -->
+                <g>
+                  <circle cx="190" cy="55" r="12" fill="none" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="190" y1="67" x2="190" y2="115" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="190" y1="115" x2="175" y2="155" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="175" y1="155" x2="175" y2="190" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="190" y1="115" x2="210" y2="140" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="210" y1="140" x2="220" y2="155" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="190" y1="80" x2="175" y2="115" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="190" y1="80" x2="205" y2="115" stroke="#14213D" stroke-width="2.5"/>
+                  <rect x="168" y="108" width="10" height="14" rx="2" fill="#CE1126"/>
+                  <rect x="202" y="108" width="10" height="14" rx="2" fill="#CE1126"/>
+                  <rect x="215" y="148" width="30" height="8" rx="2" fill="#14213D" opacity="0.4"/>
+                </g>
+                <text x="190" y="205" text-anchor="middle" font-size="9" fill="#14213D">Bottom position</text>
+                <!-- Arrow -->
+                <path d="M 110 80 Q 140 60 165 70" fill="none" stroke="#CE1126" stroke-width="1.5" stroke-dasharray="4,3"/>
+                <polygon points="165,67 165,73 172,70" fill="#CE1126"/>
+              </svg>
+              <p class="illust-label">Rear foot elevated on bench &mdash; lower until rear knee nearly touches floor</p>
+              <a href="https://www.youtube.com/watch?v=2C-uNgKwPLE" target="_blank" class="btn btn-outline tutorial-link">Watch Tutorial</a>
+            </div>
+            <div class="form-cues">
+              <h4>Form Cues</h4>
+              <ul>
+                <li>Stand 2 feet in front of bench, place rear foot laces-down on bench</li>
+                <li>Hold dumbbells at sides, shoulders back and down</li>
+                <li>Lower straight down &mdash; front shin stays vertical</li>
+                <li>Rear knee drops toward floor, not forward</li>
+                <li>Drive through front heel to stand, squeeze glute at top</li>
+                <li>Keep torso upright &mdash; slight forward lean is OK</li>
+                <li>If balance is an issue, use lighter weights until stable</li>
+              </ul>
+            </div>
+            <div class="exercise-usage">
+              <strong>Used in:</strong> Strength (M) 4x6/leg &mdash; Metabolic (F) via Goblet Squat variation
+            </div>
+          </div>
+        </div>
+
+        <!-- Exercise 2: DB Romanian Deadlift -->
+        <div class="exercise-card" id="rdl">
+          <div class="exercise-card-header">
+            <div class="exercise-card-num">2</div>
+            <h3>DB Romanian Deadlift</h3>
+            <span class="phase-badge phase-compound-lower">Compound Lower</span>
+          </div>
+          <div class="exercise-card-body">
+            <div class="exercise-illust">
+              <svg viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.35">
+                  <circle cx="80" cy="35" r="12" fill="none" stroke="#14213D" stroke-width="2"/>
+                  <line x1="80" y1="47" x2="80" y2="100" stroke="#14213D" stroke-width="2"/>
+                  <line x1="80" y1="100" x2="75" y2="150" stroke="#14213D" stroke-width="2"/>
+                  <line x1="80" y1="100" x2="85" y2="150" stroke="#14213D" stroke-width="2"/>
+                  <line x1="80" y1="65" x2="68" y2="100" stroke="#14213D" stroke-width="2"/>
+                  <line x1="80" y1="65" x2="92" y2="100" stroke="#14213D" stroke-width="2"/>
+                  <rect x="61" y="95" width="10" height="14" rx="2" fill="#CE1126" opacity="0.5"/>
+                  <rect x="89" y="95" width="10" height="14" rx="2" fill="#CE1126" opacity="0.5"/>
+                </g>
+                <text x="80" y="170" text-anchor="middle" font-size="9" fill="#14213D" opacity="0.5">Start</text>
+                <g>
+                  <circle cx="200" cy="75" r="12" fill="none" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="200" y1="87" x2="200" y2="120" stroke="#14213D" stroke-width="2.5" transform="rotate(-60, 200, 87)"/>
+                  <line x1="200" y1="120" x2="175" y2="160" stroke="#14213D" stroke-width="2.5" transform="rotate(10, 200, 120)"/>
+                  <line x1="200" y1="120" x2="195" y2="165" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="195" y1="165" x2="195" y2="190" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="200" y1="87" x2="225" y2="130" stroke="#14213D" stroke-width="2.5" transform="rotate(-60, 200, 87)"/>
+                  <rect x="168" y="130" width="10" height="14" rx="2" fill="#CE1126" transform="rotate(-10, 173, 137)"/>
+                  <rect x="215" y="105" width="10" height="14" rx="2" fill="#CE1126" transform="rotate(-10, 220, 112)"/>
+                </g>
+                <text x="200" y="205" text-anchor="middle" font-size="9" fill="#14213D">Hip hinge &mdash; feel hamstring stretch</text>
+                <path d="M 110 70 Q 145 50 175 65" fill="none" stroke="#CE1126" stroke-width="1.5" stroke-dasharray="4,3"/>
+                <polygon points="175,62 175,68 182,65" fill="#CE1126"/>
+              </svg>
+              <p class="illust-label">Hinge at hips, slide DBs down thighs &mdash; stop when you feel hamstring stretch</p>
+              <a href="https://www.youtube.com/watch?v=cYKYGwcg0U8" target="_blank" class="btn btn-outline tutorial-link">Watch Tutorial</a>
+            </div>
+            <div class="form-cues">
+              <h4>Form Cues</h4>
+              <ul>
+                <li>Stand with feet hip-width, soft bend in knees (10-15 degrees)</li>
+                <li>Push hips BACK, not down &mdash; this is a hinge, not a squat</li>
+                <li>DBs slide along the front of your thighs, staying close to body</li>
+                <li>Lower until you feel a strong hamstring stretch (usually mid-shin)</li>
+                <li>Keep back flat &mdash; neutral spine throughout</li>
+                <li>Drive hips forward to stand, squeeze glutes at top</li>
+                <li>Think "close the car door with your hips"</li>
+              </ul>
+            </div>
+            <div class="exercise-usage">
+              <strong>Used in:</strong> Strength (M) 4x8 &mdash; Hypertrophy (W) SS1b 3x12 &mdash; Metabolic (F) Primer 3x12
+            </div>
+          </div>
+        </div>
+
+        <!-- Exercise 3: Reverse Lunge -->
+        <div class="exercise-card" id="reverse-lunge">
+          <div class="exercise-card-header">
+            <div class="exercise-card-num">3</div>
+            <h3>Reverse Lunge</h3>
+            <span class="phase-badge phase-compound-lower">Compound Lower</span>
+          </div>
+          <div class="exercise-card-body">
+            <div class="exercise-illust">
+              <svg viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.35">
+                  <circle cx="80" cy="35" r="12" fill="none" stroke="#14213D" stroke-width="2"/>
+                  <line x1="80" y1="47" x2="80" y2="95" stroke="#14213D" stroke-width="2"/>
+                  <line x1="80" y1="95" x2="75" y2="145" stroke="#14213D" stroke-width="2"/>
+                  <line x1="80" y1="95" x2="85" y2="145" stroke="#14213D" stroke-width="2"/>
+                  <line x1="80" y1="62" x2="68" y2="95" stroke="#14213D" stroke-width="2"/>
+                  <line x1="80" y1="62" x2="92" y2="95" stroke="#14213D" stroke-width="2"/>
+                  <rect x="61" y="90" width="10" height="14" rx="2" fill="#CE1126" opacity="0.5"/>
+                  <rect x="89" y="90" width="10" height="14" rx="2" fill="#CE1126" opacity="0.5"/>
+                </g>
+                <text x="80" y="165" text-anchor="middle" font-size="9" fill="#14213D" opacity="0.5">Start</text>
+                <g>
+                  <circle cx="195" cy="55" r="12" fill="none" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="195" y1="67" x2="195" y2="115" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="195" y1="115" x2="185" y2="155" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="185" y1="155" x2="185" y2="185" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="195" y1="115" x2="215" y2="155" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="215" y1="155" x2="225" y2="185" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="195" y1="80" x2="180" y2="115" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="195" y1="80" x2="210" y2="115" stroke="#14213D" stroke-width="2.5"/>
+                  <rect x="173" y="108" width="10" height="14" rx="2" fill="#CE1126"/>
+                  <rect x="207" y="108" width="10" height="14" rx="2" fill="#CE1126"/>
+                </g>
+                <text x="195" y="200" text-anchor="middle" font-size="9" fill="#14213D">Step BACK &mdash; lower knee toward floor</text>
+                <path d="M 105 70 Q 140 50 170 60" fill="none" stroke="#CE1126" stroke-width="1.5" stroke-dasharray="4,3"/>
+                <polygon points="170,57 170,63 177,60" fill="#CE1126"/>
+              </svg>
+              <p class="illust-label">Step backward, not forward &mdash; less knee shear, more glute activation</p>
+              <a href="https://www.youtube.com/watch?v=xrPteyQLGAo" target="_blank" class="btn btn-outline tutorial-link">Watch Tutorial</a>
+            </div>
+            <div class="form-cues">
+              <h4>Form Cues</h4>
+              <ul>
+                <li>Stand tall with DBs at sides, step one foot BACKWARD</li>
+                <li>Lower until rear knee nearly touches floor (both knees at ~90 degrees)</li>
+                <li>Front shin stays vertical &mdash; knee doesn't shoot past toes</li>
+                <li>Drive through front heel to return to start</li>
+                <li>Alternate legs or complete all reps on one side, then switch</li>
+                <li>Keep torso upright throughout &mdash; core braced</li>
+              </ul>
+            </div>
+            <div class="exercise-usage">
+              <strong>Used in:</strong> Hypertrophy (W) 3x10/leg &mdash; Metabolic (F) Circuit A 10/leg
+            </div>
+          </div>
+        </div>
+
+        <!-- Exercise 4: Incline DB Press -->
+        <div class="exercise-card" id="incline-press">
+          <div class="exercise-card-header">
+            <div class="exercise-card-num">4</div>
+            <h3>Incline DB Press (30&deg;)</h3>
+            <span class="phase-badge phase-compound-push">Compound Push</span>
+          </div>
+          <div class="exercise-card-body">
+            <div class="exercise-illust">
+              <svg viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg">
+                <!-- Bench -->
+                <rect x="40" y="120" width="120" height="8" rx="3" fill="#14213D" opacity="0.2" transform="rotate(-25, 100, 124)"/>
+                <rect x="130" y="110" width="50" height="8" rx="3" fill="#14213D" opacity="0.2"/>
+                <!-- Person on bench -->
+                <g>
+                  <circle cx="75" cy="90" r="12" fill="none" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="82" y1="100" x2="110" y2="130" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="110" y1="130" x2="140" y2="155" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="140" y1="155" x2="140" y2="185" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="110" y1="130" x2="145" y2="155" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="145" y1="155" x2="150" y2="185" stroke="#14213D" stroke-width="2.5"/>
+                  <!-- Arms up with DBs -->
+                  <line x1="90" y1="110" x2="85" y2="65" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="100" y1="115" x2="110" y2="70" stroke="#14213D" stroke-width="2.5"/>
+                  <rect x="78" y="55" width="14" height="10" rx="2" fill="#CE1126"/>
+                  <rect x="103" y="60" width="14" height="10" rx="2" fill="#CE1126"/>
+                </g>
+                <text x="95" y="50" text-anchor="middle" font-size="9" fill="#14213D">Press up at 30&deg; angle</text>
+                <!-- Angle indicator -->
+                <text x="55" y="140" font-size="8" fill="#CE1126">30&deg;</text>
+              </svg>
+              <p class="illust-label">Bench at 30&deg; incline &mdash; 91% MVC for upper chest activation</p>
+              <a href="https://www.youtube.com/watch?v=8iPEnn-ltC8" target="_blank" class="btn btn-outline tutorial-link">Watch Tutorial</a>
+            </div>
+            <div class="form-cues">
+              <h4>Form Cues</h4>
+              <ul>
+                <li>Set bench to 30 degrees (one or two notches from flat)</li>
+                <li>Feet flat on floor, shoulder blades pinched back and down</li>
+                <li>Start with DBs at chest height, palms forward</li>
+                <li>Press up and slightly together &mdash; don't clang them at top</li>
+                <li>Lower to deep stretch at chest level (deeper than barbell allows)</li>
+                <li>1-second pause at bottom on strength day</li>
+                <li>Maintain natural arch in lower back &mdash; don't flatten</li>
+              </ul>
+            </div>
+            <div class="exercise-usage">
+              <strong>Used in:</strong> Strength (M) 4x8 &mdash; Metabolic (F) Circuit A 12 reps
+            </div>
+          </div>
+        </div>
+
+        <!-- Exercise 5: One-Arm DB Row -->
+        <div class="exercise-card" id="one-arm-row">
+          <div class="exercise-card-header">
+            <div class="exercise-card-num">5</div>
+            <h3>One-Arm DB Row</h3>
+            <span class="phase-badge phase-compound-pull">Compound Pull</span>
+          </div>
+          <div class="exercise-card-body">
+            <div class="exercise-illust">
+              <svg viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg">
+                <!-- Bench -->
+                <rect x="60" y="120" width="100" height="8" rx="3" fill="#14213D" opacity="0.2"/>
+                <!-- Person -->
+                <g>
+                  <circle cx="120" cy="80" r="12" fill="none" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="120" y1="92" x2="140" y2="120" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="140" y1="120" x2="160" y2="155" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="160" y1="155" x2="160" y2="185" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="140" y1="120" x2="155" y2="155" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="155" y1="155" x2="165" y2="185" stroke="#14213D" stroke-width="2.5"/>
+                  <!-- Support arm on bench -->
+                  <line x1="125" y1="100" x2="100" y2="118" stroke="#14213D" stroke-width="2.5"/>
+                  <!-- Rowing arm - start (hanging) -->
+                  <line x1="135" y1="105" x2="145" y2="160" stroke="#14213D" stroke-width="2" opacity="0.35"/>
+                  <rect x="140" y="155" width="10" height="14" rx="2" fill="#CE1126" opacity="0.35"/>
+                  <!-- Rowing arm - end (pulled up) -->
+                  <line x1="135" y1="105" x2="155" y2="110" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="155" y1="110" x2="155" y2="130" stroke="#14213D" stroke-width="2.5"/>
+                  <rect x="150" y="125" width="10" height="14" rx="2" fill="#CE1126"/>
+                </g>
+                <!-- Pull arrow -->
+                <path d="M 150 155 Q 165 140 158 125" fill="none" stroke="#CE1126" stroke-width="1.5" stroke-dasharray="4,3"/>
+                <polygon points="155,127 161,127 158,120" fill="#CE1126"/>
+                <text x="180" y="130" font-size="9" fill="#14213D">Pull to hip</text>
+              </svg>
+              <p class="illust-label">Hand and knee on bench &mdash; pull DB to hip, squeeze shoulder blade</p>
+              <a href="https://www.youtube.com/watch?v=xl1YEsgnVcE" target="_blank" class="btn btn-outline tutorial-link">Watch Tutorial</a>
+            </div>
+            <div class="form-cues">
+              <h4>Form Cues</h4>
+              <ul>
+                <li>Place one hand and same-side knee on bench for support</li>
+                <li>Free arm hangs straight down holding DB, back flat like a table</li>
+                <li>Pull DB to your hip (not your armpit) &mdash; leads with elbow</li>
+                <li>Squeeze shoulder blade toward spine for 1 second at top</li>
+                <li>Lower under control &mdash; don't just drop the weight</li>
+                <li>Avoid rotating torso &mdash; hips and shoulders stay square</li>
+                <li>Think "start a lawnmower" motion</li>
+              </ul>
+            </div>
+            <div class="exercise-usage">
+              <strong>Used in:</strong> Strength (M) 4x8/arm &mdash; Hypertrophy (W) SS2b 3x12/arm &mdash; Metabolic (F) Circuit A 10/arm
+            </div>
+          </div>
+        </div>
+
+        <!-- Exercise 6: Flat DB Press -->
+        <div class="exercise-card" id="flat-press">
+          <div class="exercise-card-header">
+            <div class="exercise-card-num">6</div>
+            <h3>Flat DB Press</h3>
+            <span class="phase-badge phase-compound-push">Compound Push</span>
+          </div>
+          <div class="exercise-card-body">
+            <div class="exercise-illust">
+              <svg viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg">
+                <!-- Bench -->
+                <rect x="50" y="130" width="120" height="8" rx="3" fill="#14213D" opacity="0.2"/>
+                <!-- Person flat -->
+                <g>
+                  <circle cx="70" cy="115" r="12" fill="none" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="82" y1="115" x2="140" y2="125" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="140" y1="125" x2="155" y2="160" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="155" y1="160" x2="155" y2="190" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="140" y1="125" x2="150" y2="160" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="150" y1="160" x2="145" y2="190" stroke="#14213D" stroke-width="2.5"/>
+                  <!-- Arms pressing up -->
+                  <line x1="95" y1="120" x2="90" y2="75" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="115" y1="122" x2="120" y2="75" stroke="#14213D" stroke-width="2.5"/>
+                  <rect x="83" y="65" width="14" height="10" rx="2" fill="#CE1126"/>
+                  <rect x="113" y="65" width="14" height="10" rx="2" fill="#CE1126"/>
+                </g>
+                <text x="105" y="55" text-anchor="middle" font-size="9" fill="#14213D">Press straight up</text>
+                <!-- ROM arrows -->
+                <path d="M 75 75 L 75 60" stroke="#CE1126" stroke-width="1" stroke-dasharray="3,2"/>
+                <path d="M 135 75 L 135 60" stroke="#CE1126" stroke-width="1" stroke-dasharray="3,2"/>
+                <text x="105" y="205" text-anchor="middle" font-size="8" fill="#14213D">Greater ROM than barbell &mdash; deeper stretch</text>
+              </svg>
+              <p class="illust-label">Flat bench &mdash; 93% MVC mid chest. DBs allow greater ROM than barbell.</p>
+              <a href="https://www.youtube.com/watch?v=VmB1G1K7v94" target="_blank" class="btn btn-outline tutorial-link">Watch Tutorial</a>
+            </div>
+            <div class="form-cues">
+              <h4>Form Cues</h4>
+              <ul>
+                <li>Lie flat on bench, feet planted, shoulder blades retracted</li>
+                <li>Start with DBs at chest level, palms facing feet</li>
+                <li>Press up to lockout &mdash; DBs come slightly together at top</li>
+                <li>Lower slowly to a deep stretch &mdash; elbows at 45-degree angle</li>
+                <li>Pause 1 sec at bottom on strength day for maximum tension</li>
+                <li>Keep natural back arch &mdash; don't flatten lumbar spine</li>
+              </ul>
+            </div>
+            <div class="exercise-usage">
+              <strong>Used in:</strong> Strength (M) 3x8 &mdash; Hypertrophy (W) SS2a 3x12
+            </div>
+          </div>
+        </div>
+
+        <!-- Exercise 7: Standing OH Press -->
+        <div class="exercise-card" id="oh-press">
+          <div class="exercise-card-header">
+            <div class="exercise-card-num">7</div>
+            <h3>Standing Overhead Press</h3>
+            <span class="phase-badge phase-compound-push">Compound Push</span>
+          </div>
+          <div class="exercise-card-body">
+            <div class="exercise-illust">
+              <svg viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.35">
+                  <circle cx="80" cy="40" r="12" fill="none" stroke="#14213D" stroke-width="2"/>
+                  <line x1="80" y1="52" x2="80" y2="110" stroke="#14213D" stroke-width="2"/>
+                  <line x1="80" y1="110" x2="75" y2="165" stroke="#14213D" stroke-width="2"/>
+                  <line x1="80" y1="110" x2="85" y2="165" stroke="#14213D" stroke-width="2"/>
+                  <line x1="80" y1="60" x2="60" y2="70" stroke="#14213D" stroke-width="2"/>
+                  <line x1="60" y1="70" x2="58" y2="55" stroke="#14213D" stroke-width="2"/>
+                  <line x1="80" y1="60" x2="100" y2="70" stroke="#14213D" stroke-width="2"/>
+                  <line x1="100" y1="70" x2="102" y2="55" stroke="#14213D" stroke-width="2"/>
+                  <rect x="51" y="46" width="12" height="10" rx="2" fill="#CE1126" opacity="0.5"/>
+                  <rect x="97" y="46" width="12" height="10" rx="2" fill="#CE1126" opacity="0.5"/>
+                </g>
+                <text x="80" y="180" text-anchor="middle" font-size="9" fill="#14213D" opacity="0.5">Start at shoulders</text>
+                <g>
+                  <circle cx="195" cy="50" r="12" fill="none" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="195" y1="62" x2="195" y2="120" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="195" y1="120" x2="190" y2="175" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="195" y1="120" x2="200" y2="175" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="195" y1="70" x2="175" y2="40" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="195" y1="70" x2="215" y2="40" stroke="#14213D" stroke-width="2.5"/>
+                  <rect x="168" y="30" width="12" height="10" rx="2" fill="#CE1126"/>
+                  <rect x="210" y="30" width="12" height="10" rx="2" fill="#CE1126"/>
+                </g>
+                <text x="195" y="195" text-anchor="middle" font-size="9" fill="#14213D">Full lockout overhead</text>
+                <path d="M 110 55 Q 145 35 170 45" fill="none" stroke="#CE1126" stroke-width="1.5" stroke-dasharray="4,3"/>
+                <polygon points="170,42 170,48 177,45" fill="#CE1126"/>
+              </svg>
+              <p class="illust-label">Standing engages core as stabilizer &mdash; 79% MVC for shoulders</p>
+              <a href="https://www.youtube.com/watch?v=qEwKCR5JCog" target="_blank" class="btn btn-outline tutorial-link">Watch Tutorial</a>
+            </div>
+            <div class="form-cues">
+              <h4>Form Cues</h4>
+              <ul>
+                <li>Stand with feet shoulder-width, core braced tight</li>
+                <li>DBs start at shoulder height, palms facing forward</li>
+                <li>Press straight up to full lockout &mdash; biceps near ears</li>
+                <li>Don't arch back &mdash; squeeze glutes to prevent leaning</li>
+                <li>Lower under control back to shoulders</li>
+                <li>Breathe out on the press, in on the lower</li>
+              </ul>
+            </div>
+            <div class="exercise-usage">
+              <strong>Used in:</strong> Strength (M) 3x8 &mdash; Hypertrophy (W) SS3b 3x10 &mdash; Metabolic (F) via Thruster
+            </div>
+          </div>
+        </div>
+
+        <!-- Exercise 8: DB Floor Fly -->
+        <div class="exercise-card" id="floor-fly">
+          <div class="exercise-card-header">
+            <div class="exercise-card-num">8</div>
+            <h3>DB Floor Fly</h3>
+            <span class="phase-badge phase-accessory">Accessory</span>
+          </div>
+          <div class="exercise-card-body">
+            <div class="exercise-illust">
+              <svg viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg">
+                <!-- Floor -->
+                <line x1="20" y1="150" x2="260" y2="150" stroke="#14213D" stroke-width="1" opacity="0.2"/>
+                <!-- Person on floor, arms wide -->
+                <g>
+                  <circle cx="90" cy="130" r="12" fill="none" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="102" y1="133" x2="170" y2="140" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="170" y1="140" x2="185" y2="170" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="185" y1="170" x2="185" y2="195" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="170" y1="140" x2="180" y2="170" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="180" y1="170" x2="175" y2="195" stroke="#14213D" stroke-width="2.5"/>
+                  <!-- Arms wide (open) - faded -->
+                  <line x1="110" y1="138" x2="105" y2="100" stroke="#14213D" stroke-width="2" opacity="0.35"/>
+                  <line x1="130" y1="139" x2="140" y2="100" stroke="#14213D" stroke-width="2" opacity="0.35"/>
+                  <rect x="98" y="90" width="12" height="10" rx="2" fill="#CE1126" opacity="0.3"/>
+                  <rect x="135" y="90" width="12" height="10" rx="2" fill="#CE1126" opacity="0.3"/>
+                  <!-- Arms together (closed) -->
+                  <line x1="115" y1="138" x2="118" y2="85" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="125" y1="139" x2="127" y2="85" stroke="#14213D" stroke-width="2.5"/>
+                  <rect x="111" y="75" width="12" height="10" rx="2" fill="#CE1126"/>
+                  <rect x="122" y="75" width="12" height="10" rx="2" fill="#CE1126"/>
+                </g>
+                <text x="120" y="65" text-anchor="middle" font-size="9" fill="#14213D">Squeeze together</text>
+                <text x="140" y="210" text-anchor="middle" font-size="8" fill="#14213D">Floor stops ROM &mdash; protects shoulders</text>
+              </svg>
+              <p class="illust-label">Lying on floor &mdash; arc DBs from wide to together. Floor limits dangerous ROM.</p>
+              <a href="https://www.youtube.com/watch?v=AmlKMYkJyXs" target="_blank" class="btn btn-outline tutorial-link">Watch Tutorial</a>
+            </div>
+            <div class="form-cues">
+              <h4>Form Cues</h4>
+              <ul>
+                <li>Lie on floor (not bench) &mdash; knees bent, feet flat</li>
+                <li>Start with DBs pressed up above chest</li>
+                <li>Lower in a wide arc until upper arms touch the floor</li>
+                <li>Floor provides natural ROM limiter &mdash; protects shoulders</li>
+                <li>Squeeze chest to bring DBs back together in an arc</li>
+                <li>Keep slight bend in elbows throughout &mdash; never lock arms</li>
+                <li>Focus on the squeeze at the top</li>
+              </ul>
+            </div>
+            <div class="exercise-usage">
+              <strong>Used in:</strong> Hypertrophy (W) SS3a 3x12 &mdash; Metabolic (F) Circuit B 12 reps
+            </div>
+          </div>
+        </div>
+
+        <!-- Exercise 9: Incline Curl -->
+        <div class="exercise-card" id="incline-curl">
+          <div class="exercise-card-header">
+            <div class="exercise-card-num">9</div>
+            <h3>Incline Curl</h3>
+            <span class="phase-badge phase-isolation">Isolation</span>
+          </div>
+          <div class="exercise-card-body">
+            <div class="exercise-illust">
+              <svg viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg">
+                <rect x="50" y="110" width="100" height="8" rx="3" fill="#14213D" opacity="0.2" transform="rotate(-30, 100, 114)"/>
+                <rect x="120" y="110" width="50" height="8" rx="3" fill="#14213D" opacity="0.2"/>
+                <g>
+                  <circle cx="75" cy="80" r="12" fill="none" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="82" y1="90" x2="110" y2="115" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="110" y1="115" x2="135" y2="145" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="135" y1="145" x2="135" y2="185" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="110" y1="115" x2="140" y2="145" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="140" y1="145" x2="145" y2="185" stroke="#14213D" stroke-width="2.5"/>
+                  <!-- Arm hanging (start) faded -->
+                  <line x1="85" y1="95" x2="80" y2="145" stroke="#14213D" stroke-width="2" opacity="0.35"/>
+                  <rect x="74" y="140" width="10" height="14" rx="2" fill="#CE1126" opacity="0.3"/>
+                  <!-- Arm curled (end) -->
+                  <line x1="95" y1="100" x2="95" y2="110" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="95" y1="110" x2="88" y2="100" stroke="#14213D" stroke-width="2.5"/>
+                  <rect x="82" y="92" width="10" height="12" rx="2" fill="#CE1126"/>
+                </g>
+                <text x="70" y="165" font-size="9" fill="#14213D" opacity="0.5">Hang</text>
+                <text x="60" y="92" font-size="9" fill="#14213D">Curl</text>
+                <path d="M 82 145 Q 70 120 82 102" fill="none" stroke="#CE1126" stroke-width="1.5" stroke-dasharray="4,3"/>
+                <polygon points="80,105 84,105 82,98" fill="#CE1126"/>
+              </svg>
+              <p class="illust-label">Incline angle stretches long head &mdash; higher activation than standing curl</p>
+              <a href="https://www.youtube.com/watch?v=soxrZlIl35U" target="_blank" class="btn btn-outline tutorial-link">Watch Tutorial</a>
+            </div>
+            <div class="form-cues">
+              <h4>Form Cues</h4>
+              <ul>
+                <li>Set bench to 45-55 degrees, sit back fully</li>
+                <li>Let arms hang straight down &mdash; feel the bicep stretch</li>
+                <li>Curl DBs up by bending elbows only &mdash; no swinging</li>
+                <li>Squeeze biceps hard at the top for 1 second</li>
+                <li>Lower slowly (3 sec on strength day) &mdash; this is where growth happens</li>
+                <li>Keep upper arms stationary &mdash; don't let elbows drift forward</li>
+              </ul>
+            </div>
+            <div class="exercise-usage">
+              <strong>Used in:</strong> Strength (M) 3x8 &mdash; Metabolic (F) Circuit A 10 reps
+            </div>
+          </div>
+        </div>
+
+        <!-- Exercise 10: Hammer Curl -->
+        <div class="exercise-card" id="hammer-curl">
+          <div class="exercise-card-header">
+            <div class="exercise-card-num">10</div>
+            <h3>Hammer Curl</h3>
+            <span class="phase-badge phase-isolation">Isolation</span>
+          </div>
+          <div class="exercise-card-body">
+            <div class="exercise-illust">
+              <svg viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.35">
+                  <circle cx="80" cy="35" r="12" fill="none" stroke="#14213D" stroke-width="2"/>
+                  <line x1="80" y1="47" x2="80" y2="100" stroke="#14213D" stroke-width="2"/>
+                  <line x1="80" y1="100" x2="75" y2="155" stroke="#14213D" stroke-width="2"/>
+                  <line x1="80" y1="100" x2="85" y2="155" stroke="#14213D" stroke-width="2"/>
+                  <line x1="80" y1="60" x2="70" y2="100" stroke="#14213D" stroke-width="2"/>
+                  <line x1="80" y1="60" x2="90" y2="100" stroke="#14213D" stroke-width="2"/>
+                  <rect x="63" y="95" width="14" height="10" rx="2" fill="#CE1126" opacity="0.5" transform="rotate(90,70,100)"/>
+                  <rect x="87" y="95" width="14" height="10" rx="2" fill="#CE1126" opacity="0.5" transform="rotate(90,94,100)"/>
+                </g>
+                <text x="80" y="175" text-anchor="middle" font-size="9" fill="#14213D" opacity="0.5">Arms at sides, neutral grip</text>
+                <g>
+                  <circle cx="195" cy="35" r="12" fill="none" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="195" y1="47" x2="195" y2="100" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="195" y1="100" x2="190" y2="155" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="195" y1="100" x2="200" y2="155" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="195" y1="60" x2="185" y2="72" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="185" y1="72" x2="182" y2="58" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="195" y1="60" x2="205" y2="72" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="205" y1="72" x2="208" y2="58" stroke="#14213D" stroke-width="2.5"/>
+                  <rect x="175" y="50" width="14" height="10" rx="2" fill="#CE1126" transform="rotate(90,182,55)"/>
+                  <rect x="203" y="50" width="14" height="10" rx="2" fill="#CE1126" transform="rotate(90,210,55)"/>
+                </g>
+                <text x="195" y="175" text-anchor="middle" font-size="9" fill="#14213D">Neutral grip &mdash; thumbs up throughout</text>
+                <path d="M 105 65 Q 140 45 170 55" fill="none" stroke="#CE1126" stroke-width="1.5" stroke-dasharray="4,3"/>
+                <polygon points="170,52 170,58 177,55" fill="#CE1126"/>
+              </svg>
+              <p class="illust-label">Neutral (thumbs-up) grip targets brachialis for complete arm development</p>
+              <a href="https://www.youtube.com/watch?v=zC3nLlEvin4" target="_blank" class="btn btn-outline tutorial-link">Watch Tutorial</a>
+            </div>
+            <div class="form-cues">
+              <h4>Form Cues</h4>
+              <ul>
+                <li>Stand tall, DBs at sides with neutral grip (palms face each other)</li>
+                <li>Curl both DBs up simultaneously, keeping palms facing in</li>
+                <li>Don't rotate wrists &mdash; thumbs point up the entire time</li>
+                <li>Squeeze at the top, lower slowly (2-3 seconds)</li>
+                <li>Keep elbows pinned to your sides &mdash; no swinging</li>
+                <li>Can alternate arms if preferred</li>
+              </ul>
+            </div>
+            <div class="exercise-usage">
+              <strong>Used in:</strong> Hypertrophy (W) SS4a 3x12
+            </div>
+          </div>
+        </div>
+
+        <!-- Exercise 11: OH Tricep Extension -->
+        <div class="exercise-card" id="oh-ext">
+          <div class="exercise-card-header">
+            <div class="exercise-card-num">11</div>
+            <h3>Overhead Tricep Extension</h3>
+            <span class="phase-badge phase-isolation">Isolation</span>
+          </div>
+          <div class="exercise-card-body">
+            <div class="exercise-illust">
+              <svg viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.35">
+                  <circle cx="80" cy="45" r="12" fill="none" stroke="#14213D" stroke-width="2"/>
+                  <line x1="80" y1="57" x2="80" y2="115" stroke="#14213D" stroke-width="2"/>
+                  <line x1="80" y1="115" x2="75" y2="170" stroke="#14213D" stroke-width="2"/>
+                  <line x1="80" y1="115" x2="85" y2="170" stroke="#14213D" stroke-width="2"/>
+                  <line x1="80" y1="65" x2="72" y2="35" stroke="#14213D" stroke-width="2"/>
+                  <line x1="72" y1="35" x2="65" y2="55" stroke="#14213D" stroke-width="2"/>
+                  <line x1="80" y1="65" x2="88" y2="35" stroke="#14213D" stroke-width="2"/>
+                  <line x1="88" y1="35" x2="95" y2="55" stroke="#14213D" stroke-width="2"/>
+                  <rect x="72" y="50" width="16" height="12" rx="2" fill="#CE1126" opacity="0.4"/>
+                </g>
+                <text x="80" y="190" text-anchor="middle" font-size="9" fill="#14213D" opacity="0.5">DB behind head (start)</text>
+                <g>
+                  <circle cx="195" cy="45" r="12" fill="none" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="195" y1="57" x2="195" y2="115" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="195" y1="115" x2="190" y2="170" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="195" y1="115" x2="200" y2="170" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="195" y1="65" x2="188" y2="25" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="195" y1="65" x2="202" y2="25" stroke="#14213D" stroke-width="2.5"/>
+                  <rect x="187" y="13" width="16" height="12" rx="2" fill="#CE1126"/>
+                </g>
+                <text x="195" y="190" text-anchor="middle" font-size="9" fill="#14213D">Full lockout (end)</text>
+                <path d="M 110 50 Q 145 30 175 40" fill="none" stroke="#CE1126" stroke-width="1.5" stroke-dasharray="4,3"/>
+                <polygon points="175,37 175,43 182,40" fill="#CE1126"/>
+              </svg>
+              <p class="illust-label">One DB, both hands &mdash; lower behind head, extend to lockout</p>
+              <a href="https://www.youtube.com/watch?v=YbX7Wd8jQ-Q" target="_blank" class="btn btn-outline tutorial-link">Watch Tutorial</a>
+            </div>
+            <div class="form-cues">
+              <h4>Form Cues</h4>
+              <ul>
+                <li>Hold one DB with both hands (diamond grip on the top plate)</li>
+                <li>Start with DB overhead, arms fully extended</li>
+                <li>Lower behind head by bending elbows only (3-sec negative)</li>
+                <li>Keep elbows pointing forward &mdash; don't let them flare wide</li>
+                <li>Feel full tricep stretch at bottom, then extend back to lockout</li>
+                <li>Upper arms stay stationary &mdash; only forearms move</li>
+              </ul>
+            </div>
+            <div class="exercise-usage">
+              <strong>Used in:</strong> Strength (M) 3x10 &mdash; Metabolic (F) Circuit B 12 reps
+            </div>
+          </div>
+        </div>
+
+        <!-- Exercise 12: DB Skull Crusher -->
+        <div class="exercise-card" id="skull-crusher">
+          <div class="exercise-card-header">
+            <div class="exercise-card-num">12</div>
+            <h3>DB Skull Crusher</h3>
+            <span class="phase-badge phase-isolation">Isolation</span>
+          </div>
+          <div class="exercise-card-body">
+            <div class="exercise-illust">
+              <svg viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg">
+                <rect x="40" y="130" width="140" height="8" rx="3" fill="#14213D" opacity="0.2"/>
+                <g>
+                  <circle cx="65" cy="118" r="12" fill="none" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="77" y1="120" x2="140" y2="125" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="140" y1="125" x2="155" y2="155" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="155" y1="155" x2="155" y2="185" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="140" y1="125" x2="150" y2="155" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="150" y1="155" x2="145" y2="185" stroke="#14213D" stroke-width="2.5"/>
+                  <!-- Upper arms vertical -->
+                  <line x1="100" y1="122" x2="100" y2="80" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="115" y1="123" x2="115" y2="80" stroke="#14213D" stroke-width="2.5"/>
+                  <!-- Forearms (lowered) - faded -->
+                  <line x1="100" y1="80" x2="85" y2="110" stroke="#14213D" stroke-width="2" opacity="0.35"/>
+                  <line x1="115" y1="80" x2="130" y2="110" stroke="#14213D" stroke-width="2" opacity="0.35"/>
+                  <rect x="78" y="105" width="10" height="12" rx="2" fill="#CE1126" opacity="0.3"/>
+                  <rect x="127" y="105" width="10" height="12" rx="2" fill="#CE1126" opacity="0.3"/>
+                  <!-- Forearms (extended) -->
+                  <line x1="100" y1="80" x2="98" y2="55" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="115" y1="80" x2="117" y2="55" stroke="#14213D" stroke-width="2.5"/>
+                  <rect x="91" y="45" width="12" height="10" rx="2" fill="#CE1126"/>
+                  <rect x="112" y="45" width="12" height="10" rx="2" fill="#CE1126"/>
+                </g>
+                <text x="107" y="38" text-anchor="middle" font-size="9" fill="#14213D">Extend up</text>
+                <path d="M 88 110 Q 80 85 92 60" fill="none" stroke="#CE1126" stroke-width="1.5" stroke-dasharray="4,3"/>
+                <polygon points="90,63 94,63 92,56" fill="#CE1126"/>
+              </svg>
+              <p class="illust-label">Lying on bench &mdash; lower DBs to temples, extend to lockout</p>
+              <a href="https://www.youtube.com/watch?v=ir5PsbniVSc" target="_blank" class="btn btn-outline tutorial-link">Watch Tutorial</a>
+            </div>
+            <div class="form-cues">
+              <h4>Form Cues</h4>
+              <ul>
+                <li>Lie flat on bench, DBs pressed up with neutral grip (palms face each other)</li>
+                <li>Keep upper arms vertical &mdash; only bend at the elbows</li>
+                <li>Lower DBs slowly (3 sec) toward your temples/forehead</li>
+                <li>Don't actually touch your skull &mdash; stop at ear level</li>
+                <li>Extend back to lockout, squeezing triceps at top</li>
+                <li>Elbows stay fixed &mdash; don't let them drift outward</li>
+              </ul>
+            </div>
+            <div class="exercise-usage">
+              <strong>Used in:</strong> Hypertrophy (W) SS4b 3x12
+            </div>
+          </div>
+        </div>
+
+        <!-- Exercise 13: Lateral Raise -->
+        <div class="exercise-card" id="lat-raise">
+          <div class="exercise-card-header">
+            <div class="exercise-card-num">13</div>
+            <h3>Lateral Raise</h3>
+            <span class="phase-badge phase-accessory">Accessory</span>
+          </div>
+          <div class="exercise-card-body">
+            <div class="exercise-illust">
+              <svg viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.35">
+                  <circle cx="80" cy="40" r="12" fill="none" stroke="#14213D" stroke-width="2"/>
+                  <line x1="80" y1="52" x2="80" y2="110" stroke="#14213D" stroke-width="2"/>
+                  <line x1="80" y1="110" x2="75" y2="170" stroke="#14213D" stroke-width="2"/>
+                  <line x1="80" y1="110" x2="85" y2="170" stroke="#14213D" stroke-width="2"/>
+                  <line x1="80" y1="62" x2="68" y2="100" stroke="#14213D" stroke-width="2"/>
+                  <line x1="80" y1="62" x2="92" y2="100" stroke="#14213D" stroke-width="2"/>
+                  <rect x="61" y="95" width="10" height="14" rx="2" fill="#CE1126" opacity="0.5"/>
+                  <rect x="89" y="95" width="10" height="14" rx="2" fill="#CE1126" opacity="0.5"/>
+                </g>
+                <text x="80" y="190" text-anchor="middle" font-size="9" fill="#14213D" opacity="0.5">DBs at sides</text>
+                <g>
+                  <circle cx="195" cy="40" r="12" fill="none" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="195" y1="52" x2="195" y2="110" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="195" y1="110" x2="190" y2="170" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="195" y1="110" x2="200" y2="170" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="195" y1="62" x2="155" y2="60" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="195" y1="62" x2="235" y2="60" stroke="#14213D" stroke-width="2.5"/>
+                  <rect x="145" y="55" width="12" height="10" rx="2" fill="#CE1126"/>
+                  <rect x="233" y="55" width="12" height="10" rx="2" fill="#CE1126"/>
+                </g>
+                <text x="195" y="190" text-anchor="middle" font-size="9" fill="#14213D">Raise to shoulder height</text>
+                <path d="M 105 60 Q 130 40 155 55" fill="none" stroke="#CE1126" stroke-width="1.5" stroke-dasharray="4,3"/>
+                <polygon points="155,52 155,58 162,55" fill="#CE1126"/>
+                <!-- Shoulder height line -->
+                <line x1="140" y1="62" x2="250" y2="62" stroke="#14213D" stroke-width="0.5" stroke-dasharray="3,3" opacity="0.3"/>
+              </svg>
+              <p class="illust-label">Raise to shoulder height only &mdash; peak medial deltoid activation</p>
+              <a href="https://www.youtube.com/watch?v=3VcKaXpzqRo" target="_blank" class="btn btn-outline tutorial-link">Watch Tutorial</a>
+            </div>
+            <div class="form-cues">
+              <h4>Form Cues</h4>
+              <ul>
+                <li>Stand with slight forward lean (5-10 degrees)</li>
+                <li>DBs at sides, slight bend in elbows (locked throughout)</li>
+                <li>Raise arms out to sides, leading with elbows not hands</li>
+                <li>Stop at shoulder height &mdash; going higher risks impingement</li>
+                <li>Pause 1 second at top, lower under control (2 sec)</li>
+                <li>Think "pour water from a pitcher" at the top</li>
+                <li>Don't use momentum &mdash; if you're swinging, go lighter</li>
+              </ul>
+            </div>
+            <div class="exercise-usage">
+              <strong>Used in:</strong> Strength (M) SS 3x10 &mdash; Hypertrophy (W) SS5a 3x12 &mdash; Metabolic (F) Circuit B 12 reps
+            </div>
+          </div>
+        </div>
+
+        <!-- Exercise 14: Rear Delt Fly -->
+        <div class="exercise-card" id="rear-fly">
+          <div class="exercise-card-header">
+            <div class="exercise-card-num">14</div>
+            <h3>Bent-Over Rear Delt Fly</h3>
+            <span class="phase-badge phase-accessory">Accessory</span>
+          </div>
+          <div class="exercise-card-body">
+            <div class="exercise-illust">
+              <svg viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg">
+                <!-- Hinged position -->
+                <g>
+                  <circle cx="140" cy="60" r="12" fill="none" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="140" y1="72" x2="140" y2="110" stroke="#14213D" stroke-width="2.5" transform="rotate(45, 140, 72)"/>
+                  <line x1="140" y1="110" x2="155" y2="155" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="155" y1="155" x2="155" y2="190" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="140" y1="110" x2="145" y2="155" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="145" y1="155" x2="140" y2="190" stroke="#14213D" stroke-width="2.5"/>
+                  <!-- Arms hanging (faded) -->
+                  <line x1="152" y1="80" x2="155" y2="130" stroke="#14213D" stroke-width="2" opacity="0.35"/>
+                  <line x1="157" y1="82" x2="160" y2="130" stroke="#14213D" stroke-width="2" opacity="0.35"/>
+                  <rect x="150" y="125" width="8" height="12" rx="2" fill="#CE1126" opacity="0.3"/>
+                  <rect x="157" y="125" width="8" height="12" rx="2" fill="#CE1126" opacity="0.3"/>
+                  <!-- Arms raised (fly) -->
+                  <line x1="152" y1="80" x2="110" y2="75" stroke="#14213D" stroke-width="2.5"/>
+                  <line x1="157" y1="82" x2="200" y2="77" stroke="#14213D" stroke-width="2.5"/>
+                  <rect x="100" y="70" width="12" height="10" rx="2" fill="#CE1126"/>
+                  <rect x="198" y="72" width="12" height="10" rx="2" fill="#CE1126"/>
+                </g>
+                <text x="140" y="205" text-anchor="middle" font-size="9" fill="#14213D">Hinged at 45&deg; &mdash; fly arms out, squeeze shoulder blades</text>
+                <!-- Squeeze arrows -->
+                <path d="M 155 130 Q 105 100 108 80" fill="none" stroke="#CE1126" stroke-width="1.5" stroke-dasharray="4,3"/>
+                <path d="M 160 130 Q 200 100 202 82" fill="none" stroke="#CE1126" stroke-width="1.5" stroke-dasharray="4,3"/>
+              </svg>
+              <p class="illust-label">85% MVC posterior deltoid &mdash; critical for shoulder balance and posture</p>
+              <a href="https://www.youtube.com/watch?v=EA7u4Q_8HQ0" target="_blank" class="btn btn-outline tutorial-link">Watch Tutorial</a>
+            </div>
+            <div class="form-cues">
+              <h4>Form Cues</h4>
+              <ul>
+                <li>Hinge forward at hips to 45 degrees, flat back</li>
+                <li>DBs hang straight down, slight bend in elbows</li>
+                <li>Raise arms out to sides in a reverse fly motion</li>
+                <li>Squeeze shoulder blades together at top for 1 second</li>
+                <li>Lower under control &mdash; don't just drop the weights</li>
+                <li>Keep chest pointing at floor throughout</li>
+                <li>Think "spread your wings"</li>
+              </ul>
+            </div>
+            <div class="exercise-usage">
+              <strong>Used in:</strong> Strength (M) SS 3x10 &mdash; Hypertrophy (W) SS5b 3x12
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>RD's Workout &mdash; Science-Based Training &mdash; <strong>March 2026</strong></p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

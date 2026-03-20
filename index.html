@@ -16,6 +16,7 @@
       <ul class="nav-links">
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="kettlebell.html">Kettlebell</a></li>
+        <li><a href="dumbbell.html">Dumbbell</a></li>
         <li><a href="abs.html">Abs</a></li>
         <li><a href="nutrition.html">Nutrition</a></li>
       </ul>
@@ -31,7 +32,7 @@
         <h1>RD's Workout</h1>
         <p class="hero-subtitle">Science-Based Training Programs</p>
         <div class="hero-meta">
-          <div class="hero-meta-item"><strong>Programs:</strong>&nbsp;3</div>
+          <div class="hero-meta-item"><strong>Programs:</strong>&nbsp;4</div>
           <div class="hero-meta-item"><strong>Training Days:</strong>&nbsp;6 per week</div>
           <div class="hero-meta-item"><strong>Built On:</strong>&nbsp;Peer-reviewed research</div>
         </div>
@@ -43,7 +44,7 @@
       <div class="container">
         <div class="section-header">
           <h2>Training Programs</h2>
-          <p>Three integrated programs covering strength, conditioning, core, and nutrition</p>
+          <p>Four programs covering strength, conditioning, core, and nutrition &mdash; choose based on available equipment</p>
         </div>
 
         <div class="program-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
@@ -58,6 +59,19 @@
               <li>3 day styles: Standard, Density, Power</li>
             </ul>
             <a href="kettlebell.html" class="btn btn-primary">View Program</a>
+          </div>
+
+          <div class="program-card db-card">
+            <div class="program-schedule">Mon / Wed / Fri</div>
+            <h3>Dumbbell Program</h3>
+            <p>14 exercises selected from EMG research. Daily undulating periodization for strength, fat loss, and muscle definition. Hotel gym friendly.</p>
+            <ul>
+              <li>14 exercises across 3 day types</li>
+              <li>300-400 reps per session</li>
+              <li>45-55 minutes</li>
+              <li>3 styles: Strength, Hypertrophy, Metabolic</li>
+            </ul>
+            <a href="dumbbell.html" class="btn btn-primary">View Program</a>
           </div>
 
           <div class="program-card abs-card">
@@ -89,42 +103,32 @@
       </div>
     </section>
 
-    <!-- Weekly Schedule -->
+    <!-- Available Workouts -->
     <section class="section section-alt">
       <div class="container">
         <div class="section-header">
-          <h2>Weekly Schedule</h2>
-          <p>Train 6 days, rest 1 &mdash; alternating full-body and core</p>
+          <h2>Available Workouts</h2>
+          <p>Choose your workout based on equipment and goals &mdash; M/W/F labels show recommended days</p>
         </div>
 
-        <div class="week-grid">
-          <div class="week-day kb">
-            <span class="week-day-name">Mon</span>
-            Kettlebell<br>Standard
+        <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+          <div class="card" style="text-align:center; padding:1rem;">
+            <div style="font-size:0.7rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--gray-600); font-weight:600; margin-bottom:0.5rem;">Kettlebell</div>
+            <div class="week-day kb" style="margin:0.3rem 0;"><span class="week-day-name">M</span>Standard</div>
+            <div class="week-day kb" style="margin:0.3rem 0;"><span class="week-day-name">W</span>Density</div>
+            <div class="week-day kb" style="margin:0.3rem 0;"><span class="week-day-name">F</span>Power</div>
           </div>
-          <div class="week-day abs-day">
-            <span class="week-day-name">Tue</span>
-            Abs<br>Stability
+          <div class="card" style="text-align:center; padding:1rem;">
+            <div style="font-size:0.7rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--gray-600); font-weight:600; margin-bottom:0.5rem;">Dumbbell</div>
+            <div class="week-day db" style="margin:0.3rem 0;"><span class="week-day-name">M</span>Strength</div>
+            <div class="week-day db" style="margin:0.3rem 0;"><span class="week-day-name">W</span>Hypertrophy</div>
+            <div class="week-day db" style="margin:0.3rem 0;"><span class="week-day-name">F</span>Metabolic</div>
           </div>
-          <div class="week-day kb">
-            <span class="week-day-name">Wed</span>
-            Kettlebell<br>Density
-          </div>
-          <div class="week-day abs-day">
-            <span class="week-day-name">Thu</span>
-            Abs<br>Lateral
-          </div>
-          <div class="week-day kb">
-            <span class="week-day-name">Fri</span>
-            Kettlebell<br>Power
-          </div>
-          <div class="week-day abs-day">
-            <span class="week-day-name">Sat</span>
-            Abs<br>Strength
-          </div>
-          <div class="week-day rest">
-            <span class="week-day-name">Sun</span>
-            Rest &amp;<br>Recover
+          <div class="card" style="text-align:center; padding:1rem;">
+            <div style="font-size:0.7rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--gray-600); font-weight:600; margin-bottom:0.5rem;">Abs</div>
+            <div class="week-day abs-day" style="margin:0.3rem 0;"><span class="week-day-name">T/Th/S</span>Workout A</div>
+            <div class="week-day abs-day" style="margin:0.3rem 0;"><span class="week-day-name">T/Th/S</span>Workout B</div>
+            <div class="week-day abs-day" style="margin:0.3rem 0;"><span class="week-day-name">T/Th/S</span>Workout C</div>
           </div>
         </div>
       </div>
@@ -139,18 +143,18 @@
         <div class="card-grid">
           <div class="card">
             <div class="card-number">1</div>
-            <h3>No Overlap</h3>
-            <p>Kettlebell days train full-body strength and conditioning. Ab days target core muscles directly. Never the same muscle groups two days in a row.</p>
+            <h3>Choose Your Equipment</h3>
+            <p>Kettlebell or dumbbell &mdash; both programs deliver the same training goals. Pick based on what's available at your location. They're fully interchangeable.</p>
           </div>
           <div class="card">
             <div class="card-number">2</div>
-            <h3>Complementary Training</h3>
-            <p>Kettlebell swings and presses build core stability indirectly. Dedicated ab work builds the visible strength and definition that compound movements alone can't achieve.</p>
+            <h3>Complementary Core Work</h3>
+            <p>Pair either full-body program with the abs routine on alternate days. Ab sessions are 15-20 minutes &mdash; short enough to serve as active recovery.</p>
           </div>
           <div class="card">
             <div class="card-number">3</div>
-            <h3>Built-In Recovery</h3>
-            <p>Sunday rest. Ab sessions are 15-20 minutes &mdash; short enough that they serve as active recovery between heavy kettlebell days.</p>
+            <h3>Built-In Periodization</h3>
+            <p>Both programs use 3 distinct day types that hit strength, hypertrophy, and conditioning. Sunday rest. Science-backed for maximum results.</p>
           </div>
         </div>
       </div>
