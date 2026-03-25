@@ -8,7 +8,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <style>
-    /* SVG exercise illustrations */
     .exercise-illust {
       background: var(--gray-50);
       border-radius: var(--radius);
@@ -19,23 +18,12 @@
       justify-content: center;
       min-height: 200px;
     }
-    .exercise-illust svg {
-      max-width: 280px;
-      height: auto;
-      margin-bottom: 1rem;
-    }
-    .exercise-illust .illust-label {
-      font-size: 0.75rem;
-      color: var(--gray-600);
-      text-align: center;
-    }
-    .exercise-illust .tutorial-link {
-      margin-top: 0.5rem;
-    }
+    .exercise-illust svg { max-width: 280px; height: auto; margin-bottom: 1rem; }
+    .exercise-illust .illust-label { font-size: 0.75rem; color: var(--gray-600); text-align: center; }
+    .exercise-illust .tutorial-link { margin-top: 0.5rem; }
   </style>
 </head>
 <body class="has-subnav">
-
   <nav class="nav">
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">RD's <span>Workout</span></a>
@@ -61,15 +49,13 @@
       <a href="progression.html">Progression</a>
     </div>
   </div>
-
   <main>
     <section class="hero">
       <div class="container">
         <h1>Exercise Library</h1>
-        <p class="hero-subtitle">Illustrated form guides and cues for all 12 exercises</p>
+        <p class="hero-subtitle">Illustrated form guides and cues for all 13 exercises</p>
       </div>
     </section>
-
     <section class="section">
       <div class="container">
 
@@ -83,50 +69,22 @@
           <div class="exercise-card-body">
             <div class="exercise-illust">
               <svg viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg">
-                <!-- Start: hinged position, bell between legs -->
-                <g opacity="0.4">
-                  <circle cx="70" cy="50" r="14" fill="none" stroke="#1a3c6e" stroke-width="2.5"/>
-                  <line x1="70" y1="64" x2="75" y2="110" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="75" y1="110" x2="55" y2="165" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="75" y1="110" x2="95" y2="165" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <!-- Arms hanging down with bell -->
-                  <line x1="70" y1="75" x2="60" y2="120" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="70" y1="75" x2="80" y2="120" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <rect x="62" y="118" width="16" height="12" rx="3" fill="#e8632b" opacity="0.6"/>
-                  <text x="70" y="190" text-anchor="middle" font-size="11" fill="#6b7280">Hinge</text>
-                </g>
-                <!-- End: standing tall, bell at chest height -->
-                <g>
-                  <circle cx="200" cy="40" r="14" fill="none" stroke="#1a3c6e" stroke-width="2.5"/>
-                  <line x1="200" y1="54" x2="200" y2="115" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="200" y1="115" x2="185" y2="165" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="200" y1="115" x2="215" y2="165" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <!-- Arms extended forward with bell -->
-                  <line x1="200" y1="72" x2="240" y2="68" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <rect x="238" y="62" width="18" height="12" rx="3" fill="#e8632b"/>
-                  <text x="200" y="190" text-anchor="middle" font-size="11" fill="#6b7280">Snap &amp; lock</text>
-                </g>
-                <!-- Movement arrow -->
-                <path d="M 90 115 C 120 80 155 70 185 72" fill="none" stroke="#e8632b" stroke-width="1.5" stroke-dasharray="4"/>
-                <polygon points="183,68 189,72 183,76" fill="#e8632b"/>
+                <g opacity="0.4"><circle cx="70" cy="50" r="14" fill="none" stroke="#1a3c6e" stroke-width="2.5"/><line x1="70" y1="64" x2="75" y2="110" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="75" y1="110" x2="55" y2="165" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="75" y1="110" x2="95" y2="165" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="70" y1="75" x2="60" y2="120" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="70" y1="75" x2="80" y2="120" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><rect x="62" y="118" width="16" height="12" rx="3" fill="#e8632b" opacity="0.6"/><text x="70" y="190" text-anchor="middle" font-size="11" fill="#6b7280">Hinge</text></g>
+                <g><circle cx="200" cy="40" r="14" fill="none" stroke="#1a3c6e" stroke-width="2.5"/><line x1="200" y1="54" x2="200" y2="115" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="200" y1="115" x2="185" y2="165" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="200" y1="115" x2="215" y2="165" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="200" y1="72" x2="240" y2="68" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><rect x="238" y="62" width="18" height="12" rx="3" fill="#e8632b"/><text x="200" y="190" text-anchor="middle" font-size="11" fill="#6b7280">Snap &amp; lock</text></g>
+                <path d="M 90 115 C 120 80 155 70 185 72" fill="none" stroke="#e8632b" stroke-width="1.5" stroke-dasharray="4"/><polygon points="183,68 189,72 183,76" fill="#e8632b"/>
                 <text x="140" y="210" text-anchor="middle" font-size="10" fill="#b0b8c4">Explosive hip snap &mdash; arms are ropes, power from hips</text>
               </svg>
               <a href="https://www.youtube.com/watch?v=-Kf5mKayV3E" target="_blank" class="btn btn-outline tutorial-link">Watch: Cavemantraining Tutorial</a>
             </div>
-            <div class="form-cues">
-              <h4>Form Cues</h4>
-              <ul>
-                <li><strong>Hike</strong> the bell back between your legs like a football snap</li>
-                <li><strong>Snap</strong> hips forward explosively &mdash; arms are ropes, power comes from the hip</li>
-                <li><strong>Lock out</strong> at top: squeeze glutes, brace abs, body is a straight line</li>
-                <li>Bell reaches chest height, NOT overhead</li>
-                <li>Sharp exhale at top (through pursed lips), inhale on the way down</li>
-                <li>Keep your back flat &mdash; never round the lower back</li>
-              </ul>
-            </div>
-            <div class="exercise-usage">
-              <strong>Monday:</strong> 10x10 (Heavy) &nbsp;|&nbsp; <strong>Wednesday:</strong> 5x20 (Heavy) &nbsp;|&nbsp; <strong>Friday:</strong> 10x10 (Heaviest)
-            </div>
+            <div class="form-cues"><h4>Form Cues</h4><ul>
+              <li><strong>Hike</strong> the bell back between your legs like a football snap</li>
+              <li><strong>Snap</strong> hips forward explosively &mdash; arms are ropes, power comes from the hip</li>
+              <li><strong>Lock out</strong> at top: squeeze glutes, brace abs, body is a straight line</li>
+              <li>Bell reaches chest height, NOT overhead</li>
+              <li>Sharp exhale at top (through pursed lips), inhale on the way down</li>
+              <li>Keep your back flat &mdash; never round the lower back</li>
+            </ul></div>
+            <div class="exercise-usage"><strong>Monday:</strong> 5&times;15 (Heavy) &nbsp;|&nbsp; <strong>Wednesday:</strong> 4&times;20 (Med-Heavy) &nbsp;|&nbsp; <strong>Friday:</strong> 6&times;10 (Heaviest)</div>
           </div>
         </div>
 
@@ -140,54 +98,26 @@
           <div class="exercise-card-body">
             <div class="exercise-illust">
               <svg viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg">
-                <!-- Start position -->
-                <g opacity="0.4">
-                  <circle cx="70" cy="40" r="14" fill="none" stroke="#1a3c6e" stroke-width="2.5"/>
-                  <line x1="70" y1="54" x2="70" y2="110" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="70" y1="110" x2="55" y2="160" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="70" y1="110" x2="85" y2="160" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="70" y1="70" x2="50" y2="120" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="70" y1="70" x2="90" y2="120" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <rect x="60" y="118" width="20" height="12" rx="3" fill="#e8632b" opacity="0.6"/>
-                  <text x="70" y="185" text-anchor="middle" font-size="11" fill="#6b7280">Start</text>
-                </g>
-                <!-- End position -->
-                <g>
-                  <circle cx="200" cy="40" r="14" fill="none" stroke="#1a3c6e" stroke-width="2.5"/>
-                  <line x1="200" y1="54" x2="200" y2="110" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="200" y1="110" x2="185" y2="160" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="200" y1="110" x2="215" y2="160" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <!-- Arms up with elbows high -->
-                  <line x1="200" y1="70" x2="175" y2="55" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="175" y1="55" x2="180" y2="75" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <rect x="170" y="72" width="20" height="12" rx="3" fill="#e8632b"/>
-                  <text x="200" y="185" text-anchor="middle" font-size="11" fill="#6b7280">Pull to chin</text>
-                </g>
-                <!-- Arrow -->
-                <path d="M 100 100 C 130 80 140 80 170 100" fill="none" stroke="#e8632b" stroke-width="1.5" stroke-dasharray="4"/>
-                <polygon points="168,96 174,100 168,104" fill="#e8632b"/>
+                <g opacity="0.4"><circle cx="70" cy="40" r="14" fill="none" stroke="#1a3c6e" stroke-width="2.5"/><line x1="70" y1="54" x2="70" y2="110" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="70" y1="110" x2="55" y2="160" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="70" y1="110" x2="85" y2="160" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="70" y1="70" x2="50" y2="120" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="70" y1="70" x2="90" y2="120" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><rect x="60" y="118" width="20" height="12" rx="3" fill="#e8632b" opacity="0.6"/><text x="70" y="185" text-anchor="middle" font-size="11" fill="#6b7280">Start</text></g>
+                <g><circle cx="200" cy="40" r="14" fill="none" stroke="#1a3c6e" stroke-width="2.5"/><line x1="200" y1="54" x2="200" y2="110" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="200" y1="110" x2="185" y2="160" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="200" y1="110" x2="215" y2="160" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="200" y1="70" x2="175" y2="55" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="175" y1="55" x2="180" y2="75" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><rect x="170" y="72" width="20" height="12" rx="3" fill="#e8632b"/><text x="200" y="185" text-anchor="middle" font-size="11" fill="#6b7280">Pull to chin</text></g>
+                <path d="M 100 100 C 130 80 140 80 170 100" fill="none" stroke="#e8632b" stroke-width="1.5" stroke-dasharray="4"/><polygon points="168,96 174,100 168,104" fill="#e8632b"/>
                 <text x="140" y="210" text-anchor="middle" font-size="10" fill="#b0b8c4">Hip-driven pull &mdash; elbow points to ceiling</text>
               </svg>
               <a href="https://kettlebellsworkouts.com/teaching-points-for-the-kettlebell-high-pull/" target="_blank" class="btn btn-outline tutorial-link">Full Tutorial: KettlebellsWorkouts.com</a>
             </div>
-            <div class="form-cues">
-              <h4>Form Cues</h4>
-              <ul>
-                <li>Starts like a one-arm swing</li>
-                <li>As bell rises, pull elbow back and up &mdash; elbow should point to the ceiling</li>
-                <li>Bell comes to chin/chest height, NOT overhead</li>
-                <li><strong>Hip-driven, NOT an arm pull</strong> &mdash; the hips generate the force</li>
-                <li>Keep the bell close to your body on the pull</li>
-                <li>Snap the hips on every rep &mdash; don't use the arm to muscle the bell up</li>
-              </ul>
-            </div>
-            <div class="exercise-usage">
-              <strong>Monday:</strong> 10x10 (Medium) &nbsp;|&nbsp; <strong>Wednesday:</strong> 5x20 (Medium) &nbsp;|&nbsp; <strong>Friday:</strong> 10x10 (Heavy)
-            </div>
+            <div class="form-cues"><h4>Form Cues</h4><ul>
+              <li>Starts like a one-arm swing</li>
+              <li>As bell rises, pull elbow back and up &mdash; elbow should point to the ceiling</li>
+              <li>Bell comes to chin/chest height, NOT overhead</li>
+              <li><strong>Hip-driven, NOT an arm pull</strong> &mdash; the hips generate the force</li>
+              <li>Keep the bell close to your body on the pull</li>
+              <li>Snap the hips on every rep &mdash; don't use the arm to muscle the bell up</li>
+            </ul></div>
+            <div class="exercise-usage"><strong>Monday:</strong> 4&times;12 (Med-Heavy) &nbsp;|&nbsp; <strong>Wednesday:</strong> 4&times;15 (Med) &nbsp;|&nbsp; <strong>Friday:</strong> 5&times;10 (Heavy)</div>
           </div>
         </div>
 
-        <!-- 3. Golf Swings -->
+        <!-- 3. Side (Golf) Swings -->
         <div class="exercise-card" id="golf-swings">
           <div class="exercise-card-header">
             <div class="exercise-card-num">3</div>
@@ -197,538 +127,153 @@
           <div class="exercise-card-body">
             <div class="exercise-illust">
               <svg viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg">
-                <!-- Start: bell to one side -->
-                <g opacity="0.4">
-                  <circle cx="65" cy="45" r="14" fill="none" stroke="#1a3c6e" stroke-width="2.5"/>
-                  <line x1="65" y1="59" x2="65" y2="120" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="65" y1="120" x2="50" y2="170" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="65" y1="120" x2="80" y2="170" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <!-- Arms to left side holding bell -->
-                  <line x1="65" y1="75" x2="30" y2="95" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <rect x="18" y="90" width="16" height="12" rx="3" fill="#e8632b" opacity="0.6"/>
-                  <text x="65" y="192" text-anchor="middle" font-size="11" fill="#6b7280">Left side</text>
-                </g>
-                <!-- End: bell swung to other side -->
-                <g>
-                  <circle cx="205" cy="45" r="14" fill="none" stroke="#1a3c6e" stroke-width="2.5"/>
-                  <line x1="205" y1="59" x2="205" y2="120" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="205" y1="120" x2="190" y2="170" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="205" y1="120" x2="220" y2="170" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <!-- Arms to right side -->
-                  <line x1="205" y1="75" x2="245" y2="90" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <rect x="243" y="84" width="18" height="12" rx="3" fill="#e8632b"/>
-                  <text x="205" y="192" text-anchor="middle" font-size="11" fill="#6b7280">Right side</text>
-                </g>
-                <!-- Rotational arc arrow -->
-                <path d="M 50 92 C 80 55 180 55 240 85" fill="none" stroke="#e8632b" stroke-width="1.5" stroke-dasharray="4"/>
-                <polygon points="238,81 244,85 238,89" fill="#e8632b"/>
-                <!-- Rotation indicator at hips -->
-                <path d="M 125 120 C 130 112 145 112 150 120" fill="none" stroke="#e8632b" stroke-width="1.5"/>
-                <polygon points="149,117 153,121 148,123" fill="#e8632b"/>
+                <g opacity="0.4"><circle cx="65" cy="45" r="14" fill="none" stroke="#1a3c6e" stroke-width="2.5"/><line x1="65" y1="59" x2="65" y2="120" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="65" y1="120" x2="50" y2="170" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="65" y1="120" x2="80" y2="170" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="65" y1="75" x2="30" y2="95" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><rect x="18" y="90" width="16" height="12" rx="3" fill="#e8632b" opacity="0.6"/><text x="65" y="192" text-anchor="middle" font-size="11" fill="#6b7280">Left side</text></g>
+                <g><circle cx="205" cy="45" r="14" fill="none" stroke="#1a3c6e" stroke-width="2.5"/><line x1="205" y1="59" x2="205" y2="120" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="205" y1="120" x2="190" y2="170" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="205" y1="120" x2="220" y2="170" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="205" y1="75" x2="245" y2="90" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><rect x="243" y="84" width="18" height="12" rx="3" fill="#e8632b"/><text x="205" y="192" text-anchor="middle" font-size="11" fill="#6b7280">Right side</text></g>
+                <path d="M 50 92 C 80 55 180 55 240 85" fill="none" stroke="#e8632b" stroke-width="1.5" stroke-dasharray="4"/><polygon points="238,81 244,85 238,89" fill="#e8632b"/>
+                <path d="M 125 120 C 130 112 145 112 150 120" fill="none" stroke="#e8632b" stroke-width="1.5"/><polygon points="149,117 153,121 148,123" fill="#e8632b"/>
                 <text x="140" y="210" text-anchor="middle" font-size="10" fill="#b0b8c4">Rotational arc &mdash; power from core and hip rotation</text>
               </svg>
               <a href="https://www.youtube.com/watch?v=iHQjOK3igfU" target="_blank" class="btn btn-outline tutorial-link">Watch: Cavemantraining Tutorial</a>
             </div>
-            <div class="form-cues">
-              <h4>Form Cues</h4>
-              <ul>
-                <li>Stand upright with feet shoulder-width apart</li>
-                <li>Swing the bell in a rotational arc across your body</li>
-                <li>Power comes from the <strong>core and hip rotation</strong>, not the arms</li>
-                <li>Control the rotation &mdash; don't let momentum whip you around</li>
-                <li>Keep feet planted and knees slightly bent</li>
-                <li>Alternate directions: 10 each way per set (or full sets per direction)</li>
-              </ul>
-            </div>
-            <div class="exercise-usage">
-              <strong>Monday:</strong> 5x20 (Medium) &nbsp;|&nbsp; <strong>Wednesday:</strong> 4x25 (Medium) &nbsp;|&nbsp; <strong>Friday:</strong> 10x10 (Heavy)
-            </div>
+            <div class="form-cues"><h4>Form Cues</h4><ul>
+              <li>Stand upright with feet shoulder-width apart</li>
+              <li>Swing the bell in a rotational arc across your body</li>
+              <li>Power comes from the <strong>core and hip rotation</strong>, not the arms</li>
+              <li>Control the rotation &mdash; don't let momentum whip you around</li>
+              <li>Keep feet planted and knees slightly bent</li>
+              <li>Alternate directions: 10 each way per set (or full sets per direction)</li>
+            </ul></div>
+            <div class="exercise-usage"><strong>Monday:</strong> 3&times;15 (Med) &nbsp;|&nbsp; <strong>Wednesday:</strong> 3&times;20 (Med) &nbsp;|&nbsp; <strong>Friday:</strong> 4&times;10 (Heavy)</div>
           </div>
         </div>
 
-        <!-- 4. Rows -->
-        <div class="exercise-card" id="rows">
-          <div class="exercise-card-header">
-            <div class="exercise-card-num">4</div>
-            <h3>Bent-Over Rows</h3>
-            <span class="phase-badge phase-compound-pull">Compound Pull</span>
-          </div>
-          <div class="exercise-card-body">
-            <div class="exercise-illust">
-              <svg viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg">
-                <!-- Start: bent over, arm hanging -->
-                <g opacity="0.4">
-                  <circle cx="70" cy="45" r="14" fill="none" stroke="#1a3c6e" stroke-width="2.5"/>
-                  <!-- Torso angled forward ~45deg -->
-                  <line x1="70" y1="59" x2="85" y2="115" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="85" y1="115" x2="65" y2="170" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="85" y1="115" x2="105" y2="170" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <!-- Arm hanging straight down -->
-                  <line x1="75" y1="75" x2="75" y2="130" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <rect x="67" y="128" width="16" height="12" rx="3" fill="#e8632b" opacity="0.6"/>
-                  <!-- Support arm on knee -->
-                  <line x1="75" y1="80" x2="95" y2="110" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round" opacity="0.5"/>
-                  <text x="75" y="192" text-anchor="middle" font-size="11" fill="#6b7280">Hanging</text>
-                </g>
-                <!-- End: pulled to ribcage -->
-                <g>
-                  <circle cx="200" cy="45" r="14" fill="none" stroke="#1a3c6e" stroke-width="2.5"/>
-                  <line x1="200" y1="59" x2="215" y2="115" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="215" y1="115" x2="195" y2="170" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="215" y1="115" x2="235" y2="170" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <!-- Arm pulled up, elbow high -->
-                  <line x1="205" y1="75" x2="200" y2="100" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="200" y1="100" x2="195" y2="85" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <rect x="187" y="80" width="16" height="12" rx="3" fill="#e8632b"/>
-                  <!-- Support arm -->
-                  <line x1="205" y1="80" x2="225" y2="110" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round" opacity="0.5"/>
-                  <text x="205" y="192" text-anchor="middle" font-size="11" fill="#6b7280">Pulled high</text>
-                </g>
-                <path d="M 90 128 C 115 100 160 90 188 88" fill="none" stroke="#e8632b" stroke-width="1.5" stroke-dasharray="4"/>
-                <polygon points="186,84 192,88 186,92" fill="#e8632b"/>
-                <text x="140" y="210" text-anchor="middle" font-size="10" fill="#b0b8c4">Pull elbow past ribcage &mdash; squeeze shoulder blade at top</text>
-              </svg>
-              <a href="https://www.youtube.com/watch?v=kgFPqVbYSm8" target="_blank" class="btn btn-outline tutorial-link">Watch: Cavemantraining Tutorial</a>
-            </div>
-            <div class="form-cues">
-              <h4>Form Cues</h4>
-              <ul>
-                <li>Hinge at hips ~45 degrees, flat back, core braced</li>
-                <li>Pull elbow <strong>past the ribcage</strong>, not just to the body</li>
-                <li>Squeeze the shoulder blade at the top for 1 second</li>
-                <li>Control the lowering &mdash; don't let gravity do the work</li>
-                <li>Keep your non-working hand on your knee or a bench for support</li>
-                <li>Don't rotate your torso &mdash; keep shoulders square</li>
-              </ul>
-            </div>
-            <div class="exercise-usage">
-              <strong>Monday:</strong> 5x20 (Heavy) &nbsp;|&nbsp; <strong>Wednesday:</strong> 4x25 (Heavy) &nbsp;|&nbsp; <strong>Friday:</strong> 5x20 (Heaviest)
-            </div>
-          </div>
-        </div>
-
-        <!-- 5. Push Outs -->
-        <div class="exercise-card" id="push-outs">
-          <div class="exercise-card-header">
-            <div class="exercise-card-num">5</div>
-            <h3>Push Outs</h3>
-            <span class="phase-badge phase-compound-push">Compound Push</span>
-          </div>
-          <div class="exercise-card-body">
-            <div class="exercise-illust">
-              <svg viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg">
-                <!-- Start: bell at chest -->
-                <g opacity="0.4">
-                  <circle cx="70" cy="45" r="14" fill="none" stroke="#1a3c6e" stroke-width="2.5"/>
-                  <line x1="70" y1="59" x2="70" y2="120" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="70" y1="120" x2="55" y2="170" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="70" y1="120" x2="85" y2="170" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="70" y1="75" x2="80" y2="95" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="80" y1="95" x2="78" y2="85" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <rect x="72" y="80" width="16" height="12" rx="3" fill="#e8632b" opacity="0.6"/>
-                  <text x="70" y="195" text-anchor="middle" font-size="11" fill="#6b7280">At chest</text>
-                </g>
-                <!-- End: arms extended forward -->
-                <g>
-                  <circle cx="200" cy="45" r="14" fill="none" stroke="#1a3c6e" stroke-width="2.5"/>
-                  <line x1="200" y1="59" x2="200" y2="120" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="200" y1="120" x2="185" y2="170" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="200" y1="120" x2="215" y2="170" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <!-- Arms extended forward -->
-                  <line x1="200" y1="75" x2="245" y2="80" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <rect x="240" y="74" width="20" height="12" rx="3" fill="#e8632b"/>
-                  <text x="200" y="195" text-anchor="middle" font-size="11" fill="#6b7280">Pressed out</text>
-                </g>
-                <path d="M 100 90 C 130 75 150 75 180 85" fill="none" stroke="#e8632b" stroke-width="1.5" stroke-dasharray="4"/>
-                <polygon points="178,81 184,85 178,89" fill="#e8632b"/>
-                <text x="140" y="210" text-anchor="middle" font-size="10" fill="#b0b8c4">Press horizontally from chest &mdash; full extension</text>
-              </svg>
-              <a href="https://strongandfit.com/blogs/news/kettlebell-standing-chest-press" target="_blank" class="btn btn-outline tutorial-link">Full Tutorial: Strongandfit.com</a>
-            </div>
-            <div class="form-cues">
-              <h4>Form Cues</h4>
-              <ul>
-                <li>Hold the kettlebell by the horns at chest height</li>
-                <li>Press the bell <strong>horizontally forward</strong> until arms are fully extended</li>
-                <li>Keep your core braced &mdash; don't arch the lower back</li>
-                <li>Squeeze your chest at full extension</li>
-                <li>Return slowly to the chest &mdash; controlled 2-second return</li>
-                <li>Shoulders stay down and back throughout the movement</li>
-              </ul>
-            </div>
-            <div class="exercise-usage">
-              <strong>Monday:</strong> 5x20 (Medium) &nbsp;|&nbsp; <strong>Wednesday:</strong> 4x25 (Medium) &nbsp;|&nbsp; <strong>Friday:</strong> 5x20 (Heavy)
-            </div>
-          </div>
-        </div>
-
-        <!-- 6. Overhead Press -->
-        <div class="exercise-card" id="overhead-press">
-          <div class="exercise-card-header">
-            <div class="exercise-card-num">6</div>
-            <h3>Overhead Press</h3>
-            <span class="phase-badge phase-compound-push">Compound Push</span>
-          </div>
-          <div class="exercise-card-body">
-            <div class="exercise-illust">
-              <svg viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg">
-                <!-- Start: bell at shoulder -->
-                <g opacity="0.4">
-                  <circle cx="70" cy="40" r="14" fill="none" stroke="#1a3c6e" stroke-width="2.5"/>
-                  <line x1="70" y1="54" x2="70" y2="115" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="70" y1="115" x2="55" y2="165" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="70" y1="115" x2="85" y2="165" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <!-- Arm bent, bell at shoulder -->
-                  <line x1="70" y1="68" x2="70" y2="88" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="70" y1="88" x2="78" y2="68" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <rect x="73" y="58" width="16" height="12" rx="3" fill="#e8632b" opacity="0.6"/>
-                  <text x="70" y="190" text-anchor="middle" font-size="11" fill="#6b7280">Rack</text>
-                </g>
-                <!-- End: locked out overhead -->
-                <g>
-                  <circle cx="200" cy="40" r="14" fill="none" stroke="#1a3c6e" stroke-width="2.5"/>
-                  <line x1="200" y1="54" x2="200" y2="115" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="200" y1="115" x2="185" y2="165" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="200" y1="115" x2="215" y2="165" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <!-- Arm straight up, locked out -->
-                  <line x1="200" y1="68" x2="205" y2="12" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <rect x="198" y="2" width="18" height="12" rx="3" fill="#e8632b"/>
-                  <text x="200" y="190" text-anchor="middle" font-size="11" fill="#6b7280">Lockout</text>
-                </g>
-                <path d="M 92 62 C 115 30 170 15 198 12" fill="none" stroke="#e8632b" stroke-width="1.5" stroke-dasharray="4"/>
-                <polygon points="196,8 202,12 196,16" fill="#e8632b"/>
-                <text x="140" y="210" text-anchor="middle" font-size="10" fill="#b0b8c4">Press straight up &mdash; bicep by ear, full lockout</text>
-              </svg>
-              <a href="https://www.youtube.com/watch?v=He8TyCcK0sc" target="_blank" class="btn btn-outline tutorial-link">Watch: Eric Leija Tutorial</a>
-            </div>
-            <div class="form-cues">
-              <h4>Form Cues</h4>
-              <ul>
-                <li>Start with bell at chest/shoulder height</li>
-                <li>Press straight up, finish with <strong>bicep near your ear</strong></li>
-                <li>Full lockout &mdash; straighten the arm completely at the top</li>
-                <li>Lower under control &mdash; don't drop it</li>
-                <li>Brace your core and squeeze your glutes to stabilize</li>
-                <li>Don't lean back &mdash; press the bell UP, not forward</li>
-              </ul>
-            </div>
-            <div class="exercise-usage">
-              <strong>Monday:</strong> 5x20 (Medium) &nbsp;|&nbsp; <strong>Wednesday:</strong> 4x25 (Medium) &nbsp;|&nbsp; <strong>Friday:</strong> 5x20 (Heavy)
-            </div>
-          </div>
-        </div>
-
-        <!-- 7. Low Chest Flys -->
-        <div class="exercise-card" id="chest-flys">
-          <div class="exercise-card-header">
-            <div class="exercise-card-num">7</div>
-            <h3>Low Chest Flys (Front Raise)</h3>
-            <span class="phase-badge phase-accessory">Accessory</span>
-          </div>
-          <div class="exercise-card-body">
-            <div class="exercise-illust">
-              <svg viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg">
-                <!-- Start: arms at sides -->
-                <g opacity="0.4">
-                  <circle cx="70" cy="40" r="14" fill="none" stroke="#1a3c6e" stroke-width="2.5"/>
-                  <line x1="70" y1="54" x2="70" y2="115" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="70" y1="115" x2="55" y2="165" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="70" y1="115" x2="85" y2="165" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <!-- Arms down at sides -->
-                  <line x1="70" y1="70" x2="55" y2="120" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="70" y1="70" x2="85" y2="120" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <rect x="45" y="116" width="16" height="10" rx="3" fill="#e8632b" opacity="0.6"/>
-                  <rect x="79" y="116" width="16" height="10" rx="3" fill="#e8632b" opacity="0.6"/>
-                  <text x="70" y="190" text-anchor="middle" font-size="11" fill="#6b7280">Arms at sides</text>
-                </g>
-                <!-- End: arms raised forward to chest height -->
-                <g>
-                  <circle cx="200" cy="40" r="14" fill="none" stroke="#1a3c6e" stroke-width="2.5"/>
-                  <line x1="200" y1="54" x2="200" y2="115" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="200" y1="115" x2="185" y2="165" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="200" y1="115" x2="215" y2="165" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <!-- Arms raised forward -->
-                  <line x1="200" y1="70" x2="240" y2="75" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="200" y1="70" x2="160" y2="75" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <rect x="235" y="69" width="16" height="10" rx="3" fill="#e8632b"/>
-                  <rect x="148" y="69" width="16" height="10" rx="3" fill="#e8632b"/>
-                  <text x="200" y="190" text-anchor="middle" font-size="11" fill="#6b7280">Raised to chest</text>
-                </g>
-                <path d="M 100 105 C 130 85 150 80 170 80" fill="none" stroke="#e8632b" stroke-width="1.5" stroke-dasharray="4"/>
-                <polygon points="168,76 174,80 168,84" fill="#e8632b"/>
-                <text x="140" y="210" text-anchor="middle" font-size="10" fill="#b0b8c4">Forward arc from sides to chest height</text>
-              </svg>
-              <a href="https://liftmanual.com/kettlebell-front-raise/" target="_blank" class="btn btn-outline tutorial-link">Full Tutorial: LiftManual.com</a>
-            </div>
-            <div class="form-cues">
-              <h4>Form Cues</h4>
-              <ul>
-                <li>Start with hands resting at your sides, bell in each hand (or one bell, alternating)</li>
-                <li>Raise the bell(s) in a <strong>forward arc to just above chest height</strong></li>
-                <li>Keep arms slightly bent &mdash; don't lock the elbows</li>
-                <li>Controlled tempo &mdash; don't use momentum or swing</li>
-                <li>Lower slowly back to sides (2-second descent)</li>
-                <li>Keep your core braced and don't lean back</li>
-              </ul>
-            </div>
-            <div class="exercise-usage">
-              <strong>Monday:</strong> 4x25 (Medium) &nbsp;|&nbsp; <strong>Wednesday:</strong> 4x25 (Medium) &nbsp;|&nbsp; <strong>Friday:</strong> 5x20 (Heavy)
-            </div>
-          </div>
-        </div>
-
-        <!-- 8. Bicep Curls + Press -->
-        <div class="exercise-card" id="curls-press">
-          <div class="exercise-card-header">
-            <div class="exercise-card-num">8</div>
-            <h3>Bicep Curls + Shoulder Press</h3>
-            <span class="phase-badge phase-accessory">Accessory</span>
-          </div>
-          <div class="exercise-card-body">
-            <div class="exercise-illust">
-              <svg viewBox="0 0 340 220" xmlns="http://www.w3.org/2000/svg">
-                <!-- Phase 1: arm down -->
-                <g opacity="0.35">
-                  <circle cx="55" cy="40" r="12" fill="none" stroke="#1a3c6e" stroke-width="2"/>
-                  <line x1="55" y1="52" x2="55" y2="105" stroke="#1a3c6e" stroke-width="2" stroke-linecap="round"/>
-                  <line x1="55" y1="105" x2="43" y2="150" stroke="#1a3c6e" stroke-width="2" stroke-linecap="round"/>
-                  <line x1="55" y1="105" x2="67" y2="150" stroke="#1a3c6e" stroke-width="2" stroke-linecap="round"/>
-                  <line x1="55" y1="68" x2="55" y2="115" stroke="#1a3c6e" stroke-width="2" stroke-linecap="round"/>
-                  <rect x="47" y="111" width="16" height="10" rx="3" fill="#e8632b" opacity="0.5"/>
-                  <text x="55" y="175" text-anchor="middle" font-size="9" fill="#6b7280">Start</text>
-                </g>
-                <!-- Phase 2: curled to shoulder -->
-                <g opacity="0.65">
-                  <circle cx="150" cy="40" r="12" fill="none" stroke="#1a3c6e" stroke-width="2"/>
-                  <line x1="150" y1="52" x2="150" y2="105" stroke="#1a3c6e" stroke-width="2" stroke-linecap="round"/>
-                  <line x1="150" y1="105" x2="138" y2="150" stroke="#1a3c6e" stroke-width="2" stroke-linecap="round"/>
-                  <line x1="150" y1="105" x2="162" y2="150" stroke="#1a3c6e" stroke-width="2" stroke-linecap="round"/>
-                  <line x1="150" y1="68" x2="150" y2="90" stroke="#1a3c6e" stroke-width="2" stroke-linecap="round"/>
-                  <line x1="150" y1="90" x2="158" y2="72" stroke="#1a3c6e" stroke-width="2" stroke-linecap="round"/>
-                  <rect x="152" y="64" width="16" height="10" rx="3" fill="#e8632b" opacity="0.7"/>
-                  <text x="150" y="175" text-anchor="middle" font-size="9" fill="#6b7280">Curl</text>
-                </g>
-                <!-- Phase 3: pressed overhead -->
-                <g>
-                  <circle cx="260" cy="40" r="12" fill="none" stroke="#1a3c6e" stroke-width="2.5"/>
-                  <line x1="260" y1="52" x2="260" y2="105" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="260" y1="105" x2="248" y2="150" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="260" y1="105" x2="272" y2="150" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="260" y1="68" x2="265" y2="22" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <rect x="257" y="8" width="16" height="10" rx="3" fill="#e8632b"/>
-                  <text x="260" y="175" text-anchor="middle" font-size="9" fill="#6b7280">Press</text>
-                </g>
-                <!-- Arrows -->
-                <path d="M 80 90 L 120 80" fill="none" stroke="#e8632b" stroke-width="1.5" stroke-dasharray="4"/>
-                <polygon points="118,76 124,80 118,84" fill="#e8632b"/>
-                <path d="M 185 60 L 230 40" fill="none" stroke="#e8632b" stroke-width="1.5" stroke-dasharray="4"/>
-                <polygon points="228,36 234,40 228,44" fill="#e8632b"/>
-                <text x="170" y="205" text-anchor="middle" font-size="10" fill="#b0b8c4">One fluid motion: curl &rarr; shoulder &rarr; press to sky</text>
-              </svg>
-              <a href="https://strongandfit.com/blogs/news/kettlebell-curl-to-press" target="_blank" class="btn btn-outline tutorial-link">Full Tutorial: Strongandfit.com</a>
-            </div>
-            <div class="form-cues">
-              <h4>Form Cues</h4>
-              <ul>
-                <li>Start with bell at your side, arm fully extended</li>
-                <li><strong>One continuous motion:</strong> curl to shoulder, then press to the sky</li>
-                <li>Don't pause between the curl and the press &mdash; make it fluid</li>
-                <li>Full lockout overhead, then reverse: lower to shoulder, lower to side</li>
-                <li>Keep your elbow close to your body during the curl</li>
-                <li>12-13 reps per arm per set to reach 25 total</li>
-              </ul>
-            </div>
-            <div class="exercise-usage">
-              <strong>Monday:</strong> 4x25 (Light-Med) &nbsp;|&nbsp; <strong>Wednesday:</strong> 4x25 (Light-Med) &nbsp;|&nbsp; <strong>Friday:</strong> 5x20 (Medium)
-            </div>
-          </div>
-        </div>
-
-        <!-- 9. Tricep Extensions -->
-        <div class="exercise-card" id="tricep-ext">
-          <div class="exercise-card-header">
-            <div class="exercise-card-num">9</div>
-            <h3>Tricep Extensions</h3>
-            <span class="phase-badge phase-isolation">Isolation</span>
-          </div>
-          <div class="exercise-card-body">
-            <div class="exercise-illust">
-              <svg viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg">
-                <!-- Start: bell behind head (lowered) -->
-                <g opacity="0.4">
-                  <circle cx="70" cy="40" r="14" fill="none" stroke="#1a3c6e" stroke-width="2.5"/>
-                  <line x1="70" y1="54" x2="70" y2="115" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="70" y1="115" x2="55" y2="165" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="70" y1="115" x2="85" y2="165" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <!-- Arms up, forearms back -->
-                  <line x1="70" y1="68" x2="70" y2="38" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="70" y1="38" x2="55" y2="60" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <rect x="45" y="56" width="18" height="12" rx="3" fill="#e8632b" opacity="0.6"/>
-                  <text x="70" y="190" text-anchor="middle" font-size="11" fill="#6b7280">Lowered</text>
-                </g>
-                <!-- End: fully extended overhead -->
-                <g>
-                  <circle cx="200" cy="40" r="14" fill="none" stroke="#1a3c6e" stroke-width="2.5"/>
-                  <line x1="200" y1="54" x2="200" y2="115" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="200" y1="115" x2="185" y2="165" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="200" y1="115" x2="215" y2="165" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <!-- Arms straight up -->
-                  <line x1="200" y1="68" x2="200" y2="12" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <rect x="191" y="2" width="18" height="12" rx="3" fill="#e8632b"/>
-                  <text x="200" y="190" text-anchor="middle" font-size="11" fill="#6b7280">Extended</text>
-                </g>
-                <path d="M 85 55 C 110 30 160 20 190 18" fill="none" stroke="#e8632b" stroke-width="1.5" stroke-dasharray="4"/>
-                <polygon points="188,14 194,18 188,22" fill="#e8632b"/>
-                <text x="140" y="210" text-anchor="middle" font-size="10" fill="#b0b8c4">Elbows stay tight to head &mdash; full stretch to lockout</text>
-              </svg>
-              <a href="https://strongandfit.com/blogs/news/kettlebell-overhead-tricep-extension" target="_blank" class="btn btn-outline tutorial-link">Full Tutorial: Strongandfit.com</a>
-            </div>
-            <div class="form-cues">
-              <h4>Form Cues</h4>
-              <ul>
-                <li>Stand tall, hold the bell behind your head with both hands</li>
-                <li><strong>Elbows stay tight to your head</strong> &mdash; don't let them flare out</li>
-                <li>Lower the bell behind your head for a deep stretch</li>
-                <li>Press up to full lockout overhead</li>
-                <li>Full range of motion: deep stretch at bottom, full extension at top</li>
-                <li>Keep your core braced &mdash; don't arch your back</li>
-              </ul>
-            </div>
-            <div class="exercise-usage">
-              <strong>Monday:</strong> 4x25 (Light-Med) &nbsp;|&nbsp; <strong>Wednesday:</strong> 4x25 (Light) &nbsp;|&nbsp; <strong>Friday:</strong> 5x20 (Medium)
-            </div>
-          </div>
-        </div>
-
-        <!-- 10. Side Extensions -->
-        <div class="exercise-card" id="side-ext">
-          <div class="exercise-card-header">
-            <div class="exercise-card-num">10</div>
-            <h3>Side Extensions (Side Bends)</h3>
-            <span class="phase-badge phase-core">Core</span>
-          </div>
-          <div class="exercise-card-body">
-            <div class="exercise-illust">
-              <svg viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg">
-                <!-- Start: standing upright with bell -->
-                <g opacity="0.4">
-                  <circle cx="70" cy="35" r="14" fill="none" stroke="#1a3c6e" stroke-width="2.5"/>
-                  <line x1="70" y1="49" x2="70" y2="115" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="70" y1="115" x2="55" y2="170" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="70" y1="115" x2="85" y2="170" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <!-- Right arm with bell hanging -->
-                  <line x1="70" y1="65" x2="90" y2="120" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <rect x="84" y="118" width="14" height="10" rx="3" fill="#e8632b" opacity="0.6"/>
-                  <!-- Left arm at side -->
-                  <line x1="70" y1="65" x2="50" y2="100" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <text x="70" y="192" text-anchor="middle" font-size="11" fill="#6b7280">Upright</text>
-                </g>
-                <!-- End: leaning to opposite side -->
-                <g>
-                  <circle cx="200" cy="35" r="14" fill="none" stroke="#1a3c6e" stroke-width="2.5"/>
-                  <!-- Torso leaning left -->
-                  <line x1="200" y1="49" x2="185" y2="115" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="185" y1="115" x2="170" y2="170" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="185" y1="115" x2="200" y2="170" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <!-- Right arm with bell, lowered further -->
-                  <line x1="195" y1="65" x2="215" y2="130" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <rect x="210" y="128" width="14" height="10" rx="3" fill="#e8632b"/>
-                  <!-- Left arm reaching up/over -->
-                  <line x1="195" y1="65" x2="170" y2="50" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                  <text x="195" y="192" text-anchor="middle" font-size="11" fill="#6b7280">Side bend</text>
-                </g>
-                <path d="M 90 85 C 120 70 160 65 180 75" fill="none" stroke="#e8632b" stroke-width="1.5" stroke-dasharray="4"/>
-                <polygon points="178,71 184,75 178,79" fill="#e8632b"/>
-                <text x="140" y="210" text-anchor="middle" font-size="10" fill="#b0b8c4">Lean opposite to weight &mdash; slow, controlled stretch</text>
-              </svg>
-              <a href="https://www.youtube.com/watch?v=okOIfmvv-lo" target="_blank" class="btn btn-outline tutorial-link">Watch: Cavemantraining Tutorial</a>
-            </div>
-            <div class="form-cues">
-              <h4>Form Cues</h4>
-              <ul>
-                <li>Hold the bell in one hand at your side</li>
-                <li>Lean your upper torso to the <strong>opposite side</strong> of the weight</li>
-                <li>Feel the oblique stretch on the weighted side</li>
-                <li>Lean slowly and controlled &mdash; don't jerk</li>
-                <li>Return to upright, squeezing the oblique to pull yourself up</li>
-                <li>12-13 per side per set</li>
-              </ul>
-            </div>
-            <div class="exercise-usage">
-              <strong>Monday:</strong> 4x25 (Medium) &nbsp;|&nbsp; <strong>Wednesday:</strong> 4x25 (Medium) &nbsp;|&nbsp; <strong>Friday:</strong> 5x20 (Heavy)
-            </div>
-          </div>
-        </div>
-
-        <!-- 11. Waist Halos -->
+        <!-- 4. Waist Halos -->
         <div class="exercise-card" id="waist-halos">
           <div class="exercise-card-header">
-            <div class="exercise-card-num">11</div>
+            <div class="exercise-card-num">4</div>
             <h3>Waist Halos (Around the Body)</h3>
             <span class="phase-badge phase-mobility">Mobility</span>
           </div>
           <div class="exercise-card-body">
             <div class="exercise-illust">
               <svg viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg">
-                <!-- Person standing -->
-                <circle cx="140" cy="35" r="18" fill="none" stroke="#1a3c6e" stroke-width="2.5"/>
-                <line x1="140" y1="53" x2="140" y2="125" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                <line x1="140" y1="125" x2="120" y2="180" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                <line x1="140" y1="125" x2="160" y2="180" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                <!-- Arms slightly out, passing bell -->
-                <line x1="140" y1="75" x2="110" y2="100" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                <line x1="140" y1="75" x2="170" y2="100" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                <!-- Circular path around waist -->
-                <ellipse cx="140" cy="110" rx="50" ry="25" fill="none" stroke="#e8632b" stroke-width="2" stroke-dasharray="6 3"/>
-                <!-- Arrow on the circle -->
-                <polygon points="90,104 85,112 93,110" fill="#e8632b"/>
-                <!-- Bell on the path -->
-                <rect x="182" y="104" width="16" height="12" rx="3" fill="#e8632b"/>
+                <circle cx="140" cy="35" r="18" fill="none" stroke="#1a3c6e" stroke-width="2.5"/><line x1="140" y1="53" x2="140" y2="125" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="140" y1="125" x2="120" y2="180" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="140" y1="125" x2="160" y2="180" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="140" y1="75" x2="110" y2="100" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="140" y1="75" x2="170" y2="100" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
+                <ellipse cx="140" cy="110" rx="50" ry="25" fill="none" stroke="#e8632b" stroke-width="2" stroke-dasharray="6 3"/><polygon points="90,104 85,112 93,110" fill="#e8632b"/><rect x="182" y="104" width="16" height="12" rx="3" fill="#e8632b"/>
                 <text x="140" y="210" text-anchor="middle" font-size="10" fill="#b0b8c4">Pass bell around waist &mdash; smooth hand-off, core tight</text>
               </svg>
               <a href="https://www.youtube.com/watch?v=N4mMVG8S5Kg" target="_blank" class="btn btn-outline tutorial-link">Watch: Onnit Tutorial</a>
             </div>
-            <div class="form-cues">
-              <h4>Form Cues</h4>
-              <ul>
-                <li>Pass the bell around your waist in a circular motion</li>
-                <li>Transfer the bell from hand to hand behind your back</li>
-                <li>Keep your core engaged and torso still</li>
-                <li>Alternate direction each set</li>
-                <li>Smooth, continuous motion &mdash; don't pause at the hand-off</li>
-                <li>Keep your eyes forward and posture tall</li>
-              </ul>
-            </div>
-            <div class="exercise-usage">
-              <strong>Monday:</strong> 4x25 (Light) &nbsp;|&nbsp; <strong>Wednesday:</strong> 2x50 (Light) &nbsp;|&nbsp; <strong>Friday:</strong> 4x25 (Medium)
-            </div>
+            <div class="form-cues"><h4>Form Cues</h4><ul>
+              <li>Pass the bell around your waist in a circular motion</li>
+              <li>Transfer the bell from hand to hand behind your back</li>
+              <li>Keep your core engaged and torso still</li>
+              <li>Alternate direction each set</li>
+              <li>Smooth, continuous motion &mdash; don't pause at the hand-off</li>
+              <li>Keep your eyes forward and posture tall</li>
+            </ul></div>
+            <div class="exercise-usage"><strong>Monday:</strong> 2&times;15 (Light) &nbsp;|&nbsp; <strong>Wednesday:</strong> 2&times;20 (Light) &nbsp;|&nbsp; <strong>Friday:</strong> 2&times;12 (Light-Med)</div>
           </div>
         </div>
 
-        <!-- 12. Head Halos -->
+        <!-- 5. Goblet Squats -->
+        <div class="exercise-card" id="goblet-squats">
+          <div class="exercise-card-header">
+            <div class="exercise-card-num">5</div>
+            <h3>Goblet Squats</h3>
+            <span class="phase-badge phase-compound-lower">Compound Lower</span>
+          </div>
+          <div class="exercise-card-body">
+            <div class="exercise-illust">
+              <svg viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.4"><circle cx="70" cy="35" r="14" fill="none" stroke="#1a3c6e" stroke-width="2.5"/><line x1="70" y1="49" x2="70" y2="115" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="70" y1="115" x2="55" y2="170" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="70" y1="115" x2="85" y2="170" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="70" y1="68" x2="60" y2="85" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="70" y1="68" x2="80" y2="85" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><rect x="62" y="82" width="16" height="12" rx="3" fill="#e8632b" opacity="0.6"/><text x="70" y="192" text-anchor="middle" font-size="11" fill="#6b7280">Standing</text></g>
+                <g><circle cx="200" cy="65" r="14" fill="none" stroke="#1a3c6e" stroke-width="2.5"/><line x1="200" y1="79" x2="200" y2="130" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="200" y1="130" x2="175" y2="145" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="175" y1="145" x2="178" y2="175" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="200" y1="130" x2="225" y2="145" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="225" y1="145" x2="222" y2="175" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="200" y1="98" x2="190" y2="112" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="200" y1="98" x2="210" y2="112" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><rect x="192" y="108" width="16" height="12" rx="3" fill="#e8632b"/><text x="200" y="192" text-anchor="middle" font-size="11" fill="#6b7280">Deep squat</text></g>
+                <path d="M 95 100 C 120 90 155 85 185 100" fill="none" stroke="#e8632b" stroke-width="1.5" stroke-dasharray="4"/><polygon points="183,96 189,100 183,104" fill="#e8632b"/>
+                <text x="140" y="210" text-anchor="middle" font-size="10" fill="#b0b8c4">Full depth squat &mdash; chest up, drive through heels</text>
+              </svg>
+              <a href="https://www.youtube.com/results?search_query=kettlebell+goblet+squat+form" target="_blank" class="btn btn-outline tutorial-link">Watch: Kettlebell Goblet Squat Demo</a>
+            </div>
+            <div class="form-cues"><h4>Form Cues</h4><ul>
+              <li>Hold the KB at chest height with both hands on the horns</li>
+              <li>Squat to <strong>full depth</strong> &mdash; hip crease below knee</li>
+              <li>Knees track over toes &mdash; push them out, don't let them cave in</li>
+              <li>Drive through your heels to stand back up</li>
+              <li>Keep your chest up and back flat throughout</li>
+              <li>Pause 1 second at the bottom before driving up</li>
+            </ul></div>
+            <div class="exercise-usage"><strong>Monday:</strong> 4&times;12 (Heavy) &nbsp;|&nbsp; <strong>Wednesday:</strong> 3&times;15 (Med-Heavy) &nbsp;|&nbsp; <strong>Friday:</strong> 4&times;10 (Heaviest)</div>
+          </div>
+        </div>
+
+        <!-- 6. Rows -->
+        <div class="exercise-card" id="rows">
+          <div class="exercise-card-header">
+            <div class="exercise-card-num">6</div>
+            <h3>Bent-Over Rows</h3>
+            <span class="phase-badge phase-compound-pull">Compound Pull</span>
+          </div>
+          <div class="exercise-card-body">
+            <div class="exercise-illust">
+              <svg viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.4"><circle cx="70" cy="45" r="14" fill="none" stroke="#1a3c6e" stroke-width="2.5"/><line x1="70" y1="59" x2="85" y2="115" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="85" y1="115" x2="65" y2="170" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="85" y1="115" x2="105" y2="170" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="75" y1="75" x2="75" y2="130" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><rect x="67" y="128" width="16" height="12" rx="3" fill="#e8632b" opacity="0.6"/><line x1="75" y1="80" x2="95" y2="110" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round" opacity="0.5"/><text x="75" y="192" text-anchor="middle" font-size="11" fill="#6b7280">Hanging</text></g>
+                <g><circle cx="200" cy="45" r="14" fill="none" stroke="#1a3c6e" stroke-width="2.5"/><line x1="200" y1="59" x2="215" y2="115" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="215" y1="115" x2="195" y2="170" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="215" y1="115" x2="235" y2="170" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="205" y1="75" x2="200" y2="100" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="200" y1="100" x2="195" y2="85" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><rect x="187" y="80" width="16" height="12" rx="3" fill="#e8632b"/><line x1="205" y1="80" x2="225" y2="110" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round" opacity="0.5"/><text x="205" y="192" text-anchor="middle" font-size="11" fill="#6b7280">Pulled high</text></g>
+                <path d="M 90 128 C 115 100 160 90 188 88" fill="none" stroke="#e8632b" stroke-width="1.5" stroke-dasharray="4"/><polygon points="186,84 192,88 186,92" fill="#e8632b"/>
+                <text x="140" y="210" text-anchor="middle" font-size="10" fill="#b0b8c4">Pull elbow past ribcage &mdash; squeeze shoulder blade at top</text>
+              </svg>
+              <a href="https://www.youtube.com/watch?v=kgFPqVbYSm8" target="_blank" class="btn btn-outline tutorial-link">Watch: Cavemantraining Tutorial</a>
+            </div>
+            <div class="form-cues"><h4>Form Cues</h4><ul>
+              <li>Hinge at hips ~45 degrees, flat back, core braced</li>
+              <li>Pull elbow <strong>past the ribcage</strong>, not just to the body</li>
+              <li>Squeeze the shoulder blade at the top for 1 second</li>
+              <li>Control the lowering &mdash; don't let gravity do the work</li>
+              <li>Keep your non-working hand on your knee or a bench for support</li>
+              <li>Don't rotate your torso &mdash; keep shoulders square</li>
+            </ul></div>
+            <div class="exercise-usage"><strong>Monday:</strong> 4&times;12/arm (Heavy) &nbsp;|&nbsp; <strong>Wednesday:</strong> 3&times;15/arm (Med-Heavy) &nbsp;|&nbsp; <strong>Friday:</strong> 4&times;10/arm (Heaviest)</div>
+          </div>
+        </div>
+
+        <!-- 7. Push Outs -->
+        <div class="exercise-card" id="push-outs">
+          <div class="exercise-card-header">
+            <div class="exercise-card-num">7</div>
+            <h3>Push Outs</h3>
+            <span class="phase-badge phase-compound-push">Compound Push</span>
+          </div>
+          <div class="exercise-card-body">
+            <div class="exercise-illust">
+              <svg viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.4"><circle cx="70" cy="45" r="14" fill="none" stroke="#1a3c6e" stroke-width="2.5"/><line x1="70" y1="59" x2="70" y2="120" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="70" y1="120" x2="55" y2="170" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="70" y1="120" x2="85" y2="170" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="70" y1="75" x2="80" y2="95" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="80" y1="95" x2="78" y2="85" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><rect x="72" y="80" width="16" height="12" rx="3" fill="#e8632b" opacity="0.6"/><text x="70" y="195" text-anchor="middle" font-size="11" fill="#6b7280">At chest</text></g>
+                <g><circle cx="200" cy="45" r="14" fill="none" stroke="#1a3c6e" stroke-width="2.5"/><line x1="200" y1="59" x2="200" y2="120" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="200" y1="120" x2="185" y2="170" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="200" y1="120" x2="215" y2="170" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="200" y1="75" x2="245" y2="80" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><rect x="240" y="74" width="20" height="12" rx="3" fill="#e8632b"/><text x="200" y="195" text-anchor="middle" font-size="11" fill="#6b7280">Pressed out</text></g>
+                <path d="M 100 90 C 130 75 150 75 180 85" fill="none" stroke="#e8632b" stroke-width="1.5" stroke-dasharray="4"/><polygon points="178,81 184,85 178,89" fill="#e8632b"/>
+                <text x="140" y="210" text-anchor="middle" font-size="10" fill="#b0b8c4">Press horizontally from chest &mdash; full extension</text>
+              </svg>
+              <a href="https://strongandfit.com/blogs/news/kettlebell-standing-chest-press" target="_blank" class="btn btn-outline tutorial-link">Full Tutorial: Strongandfit.com</a>
+            </div>
+            <div class="form-cues"><h4>Form Cues</h4><ul>
+              <li>Hold the kettlebell by the horns at chest height</li>
+              <li>Press the bell <strong>horizontally forward</strong> until arms are fully extended</li>
+              <li>Keep your core braced &mdash; don't arch the lower back</li>
+              <li>Squeeze your chest at full extension</li>
+              <li>Return slowly to the chest &mdash; controlled 2-second return</li>
+              <li>Shoulders stay down and back throughout the movement</li>
+            </ul></div>
+            <div class="exercise-usage"><strong>Monday:</strong> 4&times;12 (Med-Heavy) &nbsp;|&nbsp; <strong>Wednesday:</strong> 3&times;15 (Med) &nbsp;|&nbsp; <strong>Friday:</strong> 4&times;10 (Heavy)</div>
+          </div>
+        </div>
+
+        <!-- 8. Head Halos -->
         <div class="exercise-card" id="head-halos">
           <div class="exercise-card-header">
-            <div class="exercise-card-num">12</div>
+            <div class="exercise-card-num">8</div>
             <h3>Head Halos</h3>
             <span class="phase-badge phase-mobility">Mobility</span>
           </div>
           <div class="exercise-card-body">
             <div class="exercise-illust">
               <svg viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg">
-                <!-- Person with circular arrow around head -->
-                <circle cx="140" cy="55" r="18" fill="none" stroke="#1a3c6e" stroke-width="2.5"/>
-                <line x1="140" y1="73" x2="140" y2="140" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                <line x1="140" y1="140" x2="120" y2="185" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                <line x1="140" y1="140" x2="160" y2="185" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                <!-- Arms up holding bell near head -->
-                <line x1="140" y1="90" x2="120" y2="65" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                <line x1="140" y1="90" x2="160" y2="65" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
-                <!-- Circular path around head -->
-                <ellipse cx="140" cy="50" rx="42" ry="35" fill="none" stroke="#e8632b" stroke-width="2" stroke-dasharray="6 3"/>
-                <!-- Arrow on the circle -->
-                <polygon points="175,30 183,35 177,40" fill="#e8632b"/>
-                <!-- Bell on the path -->
-                <rect x="96" y="36" width="16" height="12" rx="3" fill="#e8632b"/>
+                <circle cx="140" cy="55" r="18" fill="none" stroke="#1a3c6e" stroke-width="2.5"/><line x1="140" y1="73" x2="140" y2="140" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="140" y1="140" x2="120" y2="185" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="140" y1="140" x2="160" y2="185" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="140" y1="90" x2="120" y2="65" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="140" y1="90" x2="160" y2="65" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/>
+                <ellipse cx="140" cy="50" rx="42" ry="35" fill="none" stroke="#e8632b" stroke-width="2" stroke-dasharray="6 3"/><polygon points="175,30 183,35 177,40" fill="#e8632b"/><rect x="96" y="36" width="16" height="12" rx="3" fill="#e8632b"/>
                 <text x="140" y="210" text-anchor="middle" font-size="10" fill="#b0b8c4">Circle the bell around head &mdash; slow, close, controlled</text>
               </svg>
               <div style="display:flex; gap:0.5rem; flex-wrap:wrap; justify-content:center;">
@@ -736,31 +281,171 @@
                 <a href="https://www.liveleantv.com/how-to-do-the-kettlebell-halo/" target="_blank" class="btn btn-outline tutorial-link">Live Lean TV Tutorial</a>
               </div>
             </div>
-            <div class="form-cues">
-              <h4>Form Cues</h4>
-              <ul>
-                <li>Hold the bell by the horns (upside down) at chest height</li>
-                <li>Circle the bell <strong>around your head</strong> in a smooth arc</li>
-                <li>Keep the bell close to your head &mdash; don't let it drift out</li>
-                <li>Alternate direction each set</li>
-                <li>Keep your core braced and torso completely still</li>
-                <li>Slow and controlled &mdash; this is mobility work, not a race</li>
-              </ul>
+            <div class="form-cues"><h4>Form Cues</h4><ul>
+              <li>Hold the bell by the horns (upside down) at chest height</li>
+              <li>Circle the bell <strong>around your head</strong> in a smooth arc</li>
+              <li>Keep the bell close to your head &mdash; don't let it drift out</li>
+              <li>Alternate direction each set</li>
+              <li>Keep your core braced and torso completely still</li>
+              <li>Slow and controlled &mdash; this is mobility work, not a race</li>
+            </ul></div>
+            <div class="exercise-usage"><strong>Monday:</strong> 2&times;15 (Light) &nbsp;|&nbsp; <strong>Wednesday:</strong> 2&times;20 (Light) &nbsp;|&nbsp; <strong>Friday:</strong> 2&times;12 (Light-Med)</div>
+          </div>
+        </div>
+
+        <!-- 9. Overhead Press -->
+        <div class="exercise-card" id="overhead-press">
+          <div class="exercise-card-header">
+            <div class="exercise-card-num">9</div>
+            <h3>Overhead Press</h3>
+            <span class="phase-badge phase-compound-push">Compound Push</span>
+          </div>
+          <div class="exercise-card-body">
+            <div class="exercise-illust">
+              <svg viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.4"><circle cx="70" cy="40" r="14" fill="none" stroke="#1a3c6e" stroke-width="2.5"/><line x1="70" y1="54" x2="70" y2="115" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="70" y1="115" x2="55" y2="165" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="70" y1="115" x2="85" y2="165" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="70" y1="68" x2="70" y2="88" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="70" y1="88" x2="78" y2="68" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><rect x="73" y="58" width="16" height="12" rx="3" fill="#e8632b" opacity="0.6"/><text x="70" y="190" text-anchor="middle" font-size="11" fill="#6b7280">Rack</text></g>
+                <g><circle cx="200" cy="40" r="14" fill="none" stroke="#1a3c6e" stroke-width="2.5"/><line x1="200" y1="54" x2="200" y2="115" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="200" y1="115" x2="185" y2="165" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="200" y1="115" x2="215" y2="165" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="200" y1="68" x2="205" y2="12" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><rect x="198" y="2" width="18" height="12" rx="3" fill="#e8632b"/><text x="200" y="190" text-anchor="middle" font-size="11" fill="#6b7280">Lockout</text></g>
+                <path d="M 92 62 C 115 30 170 15 198 12" fill="none" stroke="#e8632b" stroke-width="1.5" stroke-dasharray="4"/><polygon points="196,8 202,12 196,16" fill="#e8632b"/>
+                <text x="140" y="210" text-anchor="middle" font-size="10" fill="#b0b8c4">Press straight up &mdash; bicep by ear, full lockout</text>
+              </svg>
+              <a href="https://www.youtube.com/watch?v=He8TyCcK0sc" target="_blank" class="btn btn-outline tutorial-link">Watch: Eric Leija Tutorial</a>
             </div>
-            <div class="exercise-usage">
-              <strong>Monday:</strong> 4x25 (Light) &nbsp;|&nbsp; <strong>Wednesday:</strong> 2x50 (Light) &nbsp;|&nbsp; <strong>Friday:</strong> 4x25 (Medium)
+            <div class="form-cues"><h4>Form Cues</h4><ul>
+              <li>Start with bell at chest/shoulder height</li>
+              <li>Press straight up, finish with <strong>bicep near your ear</strong></li>
+              <li>Full lockout &mdash; straighten the arm completely at the top</li>
+              <li>Lower under control &mdash; don't drop it</li>
+              <li>Brace your core and squeeze your glutes to stabilize</li>
+              <li>Don't lean back &mdash; press the bell UP, not forward</li>
+            </ul></div>
+            <div class="exercise-usage"><strong>Monday:</strong> 4&times;10/arm (Med-Heavy) &nbsp;|&nbsp; <strong>Wednesday:</strong> 3&times;12/arm (Med) &nbsp;|&nbsp; <strong>Friday:</strong> 4&times;8/arm (Heavy)</div>
+          </div>
+        </div>
+
+        <!-- 10. Bicep Curls + Shoulder Press -->
+        <div class="exercise-card" id="curls-press">
+          <div class="exercise-card-header">
+            <div class="exercise-card-num">10</div>
+            <h3>Bicep Curls + Shoulder Press</h3>
+            <span class="phase-badge phase-accessory">Accessory</span>
+          </div>
+          <div class="exercise-card-body">
+            <div class="exercise-illust">
+              <svg viewBox="0 0 340 220" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.35"><circle cx="55" cy="40" r="12" fill="none" stroke="#1a3c6e" stroke-width="2"/><line x1="55" y1="52" x2="55" y2="105" stroke="#1a3c6e" stroke-width="2" stroke-linecap="round"/><line x1="55" y1="105" x2="43" y2="150" stroke="#1a3c6e" stroke-width="2" stroke-linecap="round"/><line x1="55" y1="105" x2="67" y2="150" stroke="#1a3c6e" stroke-width="2" stroke-linecap="round"/><line x1="55" y1="68" x2="55" y2="115" stroke="#1a3c6e" stroke-width="2" stroke-linecap="round"/><rect x="47" y="111" width="16" height="10" rx="3" fill="#e8632b" opacity="0.5"/><text x="55" y="175" text-anchor="middle" font-size="9" fill="#6b7280">Start</text></g>
+                <g opacity="0.65"><circle cx="150" cy="40" r="12" fill="none" stroke="#1a3c6e" stroke-width="2"/><line x1="150" y1="52" x2="150" y2="105" stroke="#1a3c6e" stroke-width="2" stroke-linecap="round"/><line x1="150" y1="105" x2="138" y2="150" stroke="#1a3c6e" stroke-width="2" stroke-linecap="round"/><line x1="150" y1="105" x2="162" y2="150" stroke="#1a3c6e" stroke-width="2" stroke-linecap="round"/><line x1="150" y1="68" x2="150" y2="90" stroke="#1a3c6e" stroke-width="2" stroke-linecap="round"/><line x1="150" y1="90" x2="158" y2="72" stroke="#1a3c6e" stroke-width="2" stroke-linecap="round"/><rect x="152" y="64" width="16" height="10" rx="3" fill="#e8632b" opacity="0.7"/><text x="150" y="175" text-anchor="middle" font-size="9" fill="#6b7280">Curl</text></g>
+                <g><circle cx="260" cy="40" r="12" fill="none" stroke="#1a3c6e" stroke-width="2.5"/><line x1="260" y1="52" x2="260" y2="105" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="260" y1="105" x2="248" y2="150" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="260" y1="105" x2="272" y2="150" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="260" y1="68" x2="265" y2="22" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><rect x="257" y="8" width="16" height="10" rx="3" fill="#e8632b"/><text x="260" y="175" text-anchor="middle" font-size="9" fill="#6b7280">Press</text></g>
+                <path d="M 80 90 L 120 80" fill="none" stroke="#e8632b" stroke-width="1.5" stroke-dasharray="4"/><polygon points="118,76 124,80 118,84" fill="#e8632b"/>
+                <path d="M 185 60 L 230 40" fill="none" stroke="#e8632b" stroke-width="1.5" stroke-dasharray="4"/><polygon points="228,36 234,40 228,44" fill="#e8632b"/>
+                <text x="170" y="205" text-anchor="middle" font-size="10" fill="#b0b8c4">One fluid motion: curl &#8594; shoulder &#8594; press to sky</text>
+              </svg>
+              <a href="https://strongandfit.com/blogs/news/kettlebell-curl-to-press" target="_blank" class="btn btn-outline tutorial-link">Full Tutorial: Strongandfit.com</a>
             </div>
+            <div class="form-cues"><h4>Form Cues</h4><ul>
+              <li>Start with bell at your side, arm fully extended</li>
+              <li><strong>One continuous motion:</strong> curl to shoulder, then press to the sky</li>
+              <li>Don't pause between the curl and the press &mdash; make it fluid</li>
+              <li>Full lockout overhead, then reverse: lower to shoulder, lower to side</li>
+              <li>Keep your elbow close to your body during the curl</li>
+              <li>12-13 reps per arm per set to reach 25 total</li>
+            </ul></div>
+            <div class="exercise-usage"><strong>Monday:</strong> 3&times;12 (Med) &nbsp;|&nbsp; <strong>Wednesday:</strong> 3&times;15 (Light-Med) &nbsp;|&nbsp; <strong>Friday:</strong> 3&times;10 (Med-Heavy)</div>
+          </div>
+        </div>
+
+        <!-- 11. Tricep Extensions -->
+        <div class="exercise-card" id="tricep-ext">
+          <div class="exercise-card-header">
+            <div class="exercise-card-num">11</div>
+            <h3>Tricep Extensions</h3>
+            <span class="phase-badge phase-isolation">Isolation</span>
+          </div>
+          <div class="exercise-card-body">
+            <div class="exercise-illust">
+              <svg viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.4"><circle cx="70" cy="40" r="14" fill="none" stroke="#1a3c6e" stroke-width="2.5"/><line x1="70" y1="54" x2="70" y2="115" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="70" y1="115" x2="55" y2="165" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="70" y1="115" x2="85" y2="165" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="70" y1="68" x2="70" y2="38" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="70" y1="38" x2="55" y2="60" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><rect x="45" y="56" width="18" height="12" rx="3" fill="#e8632b" opacity="0.6"/><text x="70" y="190" text-anchor="middle" font-size="11" fill="#6b7280">Lowered</text></g>
+                <g><circle cx="200" cy="40" r="14" fill="none" stroke="#1a3c6e" stroke-width="2.5"/><line x1="200" y1="54" x2="200" y2="115" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="200" y1="115" x2="185" y2="165" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="200" y1="115" x2="215" y2="165" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="200" y1="68" x2="200" y2="12" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><rect x="191" y="2" width="18" height="12" rx="3" fill="#e8632b"/><text x="200" y="190" text-anchor="middle" font-size="11" fill="#6b7280">Extended</text></g>
+                <path d="M 85 55 C 110 30 160 20 190 18" fill="none" stroke="#e8632b" stroke-width="1.5" stroke-dasharray="4"/><polygon points="188,14 194,18 188,22" fill="#e8632b"/>
+                <text x="140" y="210" text-anchor="middle" font-size="10" fill="#b0b8c4">Elbows stay tight to head &mdash; full stretch to lockout</text>
+              </svg>
+              <a href="https://strongandfit.com/blogs/news/kettlebell-overhead-tricep-extension" target="_blank" class="btn btn-outline tutorial-link">Full Tutorial: Strongandfit.com</a>
+            </div>
+            <div class="form-cues"><h4>Form Cues</h4><ul>
+              <li>Stand tall, hold the bell behind your head with both hands</li>
+              <li><strong>Elbows stay tight to your head</strong> &mdash; don't let them flare out</li>
+              <li>Lower the bell behind your head for a deep stretch</li>
+              <li>Press up to full lockout overhead</li>
+              <li>Full range of motion: deep stretch at bottom, full extension at top</li>
+              <li>Keep your core braced &mdash; don't arch your back</li>
+            </ul></div>
+            <div class="exercise-usage"><strong>Monday:</strong> 3&times;12 (Med) &nbsp;|&nbsp; <strong>Wednesday:</strong> 3&times;15 (Light-Med) &nbsp;|&nbsp; <strong>Friday:</strong> 3&times;10 (Med)</div>
+          </div>
+        </div>
+
+        <!-- 12. Side Extensions -->
+        <div class="exercise-card" id="side-ext">
+          <div class="exercise-card-header">
+            <div class="exercise-card-num">12</div>
+            <h3>Side Extensions (Side Bends)</h3>
+            <span class="phase-badge phase-core">Core</span>
+          </div>
+          <div class="exercise-card-body">
+            <div class="exercise-illust">
+              <svg viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.4"><circle cx="70" cy="35" r="14" fill="none" stroke="#1a3c6e" stroke-width="2.5"/><line x1="70" y1="49" x2="70" y2="115" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="70" y1="115" x2="55" y2="170" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="70" y1="115" x2="85" y2="170" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="70" y1="65" x2="90" y2="120" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><rect x="84" y="118" width="14" height="10" rx="3" fill="#e8632b" opacity="0.6"/><line x1="70" y1="65" x2="50" y2="100" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><text x="70" y="192" text-anchor="middle" font-size="11" fill="#6b7280">Upright</text></g>
+                <g><circle cx="200" cy="35" r="14" fill="none" stroke="#1a3c6e" stroke-width="2.5"/><line x1="200" y1="49" x2="185" y2="115" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="185" y1="115" x2="170" y2="170" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="185" y1="115" x2="200" y2="170" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="195" y1="65" x2="215" y2="130" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><rect x="210" y="128" width="14" height="10" rx="3" fill="#e8632b"/><line x1="195" y1="65" x2="170" y2="50" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><text x="195" y="192" text-anchor="middle" font-size="11" fill="#6b7280">Side bend</text></g>
+                <path d="M 90 85 C 120 70 160 65 180 75" fill="none" stroke="#e8632b" stroke-width="1.5" stroke-dasharray="4"/><polygon points="178,71 184,75 178,79" fill="#e8632b"/>
+                <text x="140" y="210" text-anchor="middle" font-size="10" fill="#b0b8c4">Lean opposite to weight &mdash; slow, controlled stretch</text>
+              </svg>
+              <a href="https://www.youtube.com/watch?v=okOIfmvv-lo" target="_blank" class="btn btn-outline tutorial-link">Watch: Cavemantraining Tutorial</a>
+            </div>
+            <div class="form-cues"><h4>Form Cues</h4><ul>
+              <li>Hold the bell in one hand at your side</li>
+              <li>Lean your upper torso to the <strong>opposite side</strong> of the weight</li>
+              <li>Feel the oblique stretch on the weighted side</li>
+              <li>Lean slowly and controlled &mdash; don't jerk</li>
+              <li>Return to upright, squeezing the oblique to pull yourself up</li>
+              <li>12-13 per side per set</li>
+            </ul></div>
+            <div class="exercise-usage"><strong>Monday:</strong> 3&times;12/side (Med) &nbsp;|&nbsp; <strong>Wednesday:</strong> 3&times;15/side (Med) &nbsp;|&nbsp; <strong>Friday:</strong> 3&times;10/side (Heavy)</div>
+          </div>
+        </div>
+
+        <!-- 13. Farmer's Walk -->
+        <div class="exercise-card" id="farmers-walk">
+          <div class="exercise-card-header">
+            <div class="exercise-card-num">13</div>
+            <h3>Farmer's Walk</h3>
+            <span class="phase-badge phase-carry">Carry</span>
+          </div>
+          <div class="exercise-card-body">
+            <div class="exercise-illust">
+              <svg viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.4"><circle cx="70" cy="35" r="14" fill="none" stroke="#1a3c6e" stroke-width="2.5"/><line x1="70" y1="49" x2="70" y2="115" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="70" y1="115" x2="55" y2="170" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="70" y1="115" x2="85" y2="170" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="70" y1="65" x2="50" y2="120" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="70" y1="65" x2="90" y2="120" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><rect x="42" y="118" width="14" height="10" rx="3" fill="#e8632b" opacity="0.6"/><rect x="84" y="118" width="14" height="10" rx="3" fill="#e8632b" opacity="0.6"/><text x="70" y="192" text-anchor="middle" font-size="11" fill="#6b7280">Start</text></g>
+                <g><circle cx="200" cy="35" r="14" fill="none" stroke="#1a3c6e" stroke-width="2.5"/><line x1="200" y1="49" x2="200" y2="115" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="200" y1="115" x2="180" y2="170" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="200" y1="115" x2="220" y2="170" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="200" y1="65" x2="180" y2="120" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><line x1="200" y1="65" x2="220" y2="120" stroke="#1a3c6e" stroke-width="2.5" stroke-linecap="round"/><rect x="172" y="118" width="14" height="10" rx="3" fill="#e8632b"/><rect x="214" y="118" width="14" height="10" rx="3" fill="#e8632b"/><text x="200" y="192" text-anchor="middle" font-size="11" fill="#6b7280">Walk</text></g>
+                <path d="M 100 100 C 130 85 155 85 175 90" fill="none" stroke="#e8632b" stroke-width="1.5" stroke-dasharray="4"/><polygon points="173,86 179,90 173,94" fill="#e8632b"/>
+                <text x="140" y="210" text-anchor="middle" font-size="10" fill="#b0b8c4">Walk with purpose &mdash; shoulders back, core braced, grip hard</text>
+              </svg>
+              <a href="https://www.youtube.com/results?search_query=kettlebell+farmer%27s+walk+form" target="_blank" class="btn btn-outline tutorial-link">Watch: Kettlebell Farmer's Walk Demo</a>
+            </div>
+            <div class="form-cues"><h4>Form Cues</h4><ul>
+              <li>Hold the <strong>heaviest KBs</strong> you can manage, one in each hand at your sides</li>
+              <li>Walk with purpose &mdash; controlled, steady stride</li>
+              <li>Shoulders back and down &mdash; don't let them round forward</li>
+              <li>Core braced tight throughout the entire walk</li>
+              <li>Grip hard &mdash; squeeze the handles as tight as possible</li>
+              <li>Maintain upright posture &mdash; head up, chest proud, no leaning</li>
+            </ul></div>
+            <div class="exercise-usage"><strong>Monday:</strong> 3&times;40s (Heaviest) &nbsp;|&nbsp; <strong>Wednesday:</strong> 2&times;45s (Heavy) &nbsp;|&nbsp; <strong>Friday:</strong> 3&times;40s (Heaviest)</div>
           </div>
         </div>
 
       </div>
     </section>
   </main>
-
   <footer>
     <p>RD's Workout &mdash; Science-Based Training &mdash; <strong>March 2026</strong></p>
   </footer>
-
   <script src="js/main.js"></script>
 </body>
 </html>

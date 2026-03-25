@@ -397,6 +397,7 @@ tbody tr:hover { background: var(--gray-50); }
 .phase-anti-rotation { background: #dbeafe; color: #1e40af; }
 .phase-compound-lower { background: #fef3c7; color: #92400e; }
 .phase-finisher { background: #fecaca; color: #991b1b; }
+.phase-carry { background: #ccfbf1; color: #0f766e; }
 
 .demo-link {
   display: inline-block;
